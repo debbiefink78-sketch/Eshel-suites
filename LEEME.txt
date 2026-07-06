@@ -1,0 +1,51 @@
+═══════════════════════════════════════════════════════
+ESHEL SUITES PANAMÁ — Sitio web — VERSIÓN FINAL v31
+eshelpanama.com
+═══════════════════════════════════════════════════════
+
+CONTENIDO DEL ZIP:
+- index.html → página completa (trilingüe ES/EN/HE con RTL)
+- data.js → datos de las 9 suites
+- kosher.js → directorio kosher (52 lugares)
+- assets/ → 142 fotos, 7 videos, logo, favicon
+
+═══════════════════════════════════════════════════════
+CARACTERÍSTICAS:
+═══════════════════════════════════════════════════════
+- Paleta fiel a Eshel: blanco + negro + verde + dorado sutil
+- 9 suites con fotos, videos, precios (cuadritos clickeables)
+- Carrusel de áreas comunes con movimiento automático
+- Turismo: 14 atracciones + 6 experiencias (con selector de fecha y WhatsApp)
+- Directorio kosher (52 lugares)
+- Sección de reseñas (espacio listo para widget Elfsight)
+- FAQ con política de cancelación desplegable
+- Botón flotante de WhatsApp
+- Favicon con el logo de Eshel
+- Metadatos para compartir (sale foto + descripción)
+- Instagram @eshelsuitespanama
+- Email: rentals@eshelpanama.com
+- Menú móvil que se cierra al tocar un enlace
+
+═══════════════════════════════════════════════════════
+CÓMO PUBLICAR EN NETLIFY:
+═══════════════════════════════════════════════════════
+1. Entra a app.netlify.com/drop
+2. Descomprime este ZIP
+3. Arrastra la carpeta completa a la ventana
+4. Te da un link público al instante
+5. En "Domain settings" conecta tu dominio eshelpanama.com
+
+═══════════════════════════════════════════════════════
+PENDIENTES OPCIONALES (cuando puedas):
+═══════════════════════════════════════════════════════
+- Fotos: Cabalgatas, Tour Ciudad, Tour Playas (muestran ícono)
+- Videos: Troy y Brooklyn (espacio listo en data.js)
+- Código Elfsight → activar reseñas de Google
+- Motor de reservas embebido de Cloudbeds (esperando código de soporte)
+- Tilopay ya activado para cobros ✓
+
+PARA AGREGAR VIDEOS (Troy/Brooklyn):
+1. Sube assets/troy/troy.mp4 + assets/troy/troy-poster.jpg
+2. En data.js cambia video:false a video:true
+(mismo proceso para brooklyn)
+═══════════════════════════════════════════════════════

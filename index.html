@@ -1,0 +1,1374 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Eshel Suites Panamá — Hospedaje boutique kosher en Paitilla</title>
+<meta name="description" content="Aparthotel boutique kosher en el corazón de Paitilla, Ciudad de Panamá. Suites de lujo, vida judía, Shabat y todo a pasos. Tu hogar lejos de casa.">
+<meta property="og:title" content="Eshel Suites Panamá — Hospedaje boutique kosher en Paitilla">
+<meta property="og:description" content="Aparthotel boutique kosher en el corazón de Paitilla, Ciudad de Panamá.">
+<meta property="og:url" content="https://eshelpanama.com">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://eshelpanama.com/assets/kingston/kingston-03.webp">
+<meta property="og:image:alt" content="Eshel Suites Panamá">
+<meta property="og:site_name" content="Eshel Suites Panamá">
+<meta property="og:locale" content="es_PA">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Eshel Suites Panamá — Hospedaje boutique kosher en Paitilla">
+<meta name="twitter:description" content="Aparthotel boutique kosher en el corazón de Paitilla, Ciudad de Panamá.">
+<meta name="twitter:image" content="https://eshelpanama.com/assets/kingston/kingston-03.webp">
+<link rel="icon" type="image/png" href="assets/favicon.png">
+<link rel="icon" type="image/webp" href="assets/favicon.webp">
+<link rel="apple-touch-icon" href="assets/favicon.png">
+<link rel="canonical" href="https://eshelpanama.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Jost:wght@300;400;500;600&family=Frank+Ruhl+Libre:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bone:#F7F7F5; --bone-2:#ECECEA; --cream:#FFFFFF;
+  --navy:#1C1C1C; --navy-2:#2E2E2E; --navy-soft:#3A3A3A;
+  --forest:#24503A; --gold:#C9A24B; --gold-2:#A07E2E; --gold-soft:#E8DCC0;
+  --ink:#1A1A1A; --muted:#6B6B68; --line:rgba(28,28,28,.14);
+  --shadow:0 18px 50px -18px rgba(28,28,28,.32);
+  --serif:'Cormorant Garamond',Georgia,serif;
+  --sans:'Jost',system-ui,sans-serif;
+  --hebrew:'Frank Ruhl Libre',serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  font-family:var(--sans);background:var(--bone);color:var(--ink);
+  line-height:1.6;font-weight:300;overflow-x:hidden;padding-top:48px;font-size:17px;
+}
+body.lang-he{font-family:var(--hebrew);direction:rtl}
+body.lang-he .keep-ltr{direction:ltr}
+h1,h2,h3,h4{font-family:var(--serif);font-weight:600;line-height:1.1;color:var(--navy)}
+body.lang-he h1,body.lang-he h2,body.lang-he h3,body.lang-he h4{font-family:var(--hebrew);font-weight:700}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1240px;margin:0 auto;padding:0 24px}
+.eyebrow{font-family:var(--sans);font-weight:500;font-size:.72rem;letter-spacing:.32em;text-transform:uppercase;color:var(--gold-2)}
+.section{padding:clamp(64px,9vw,128px) 0}
+.section-head{max-width:680px;margin:0 auto clamp(40px,6vw,72px);text-align:center}
+.section-head h2{font-size:clamp(2.1rem,5vw,3.4rem);margin:.3em 0 .35em;letter-spacing:-.01em}
+.section-head p{color:var(--muted);font-size:1.05rem}
+.gold-rule{width:54px;height:1px;background:var(--gold);margin:18px auto;position:relative}
+.gold-rule::before{content:"";position:absolute;top:-2px;left:50%;transform:translateX(-50%) rotate(45deg);width:5px;height:5px;background:var(--gold)}
+
+/* hide content based on language */
+[data-en],[data-he]{display:none}
+body.lang-en [data-es]{display:none}
+body.lang-en [data-en]{display:block}
+body.lang-en [data-en].inline,body.lang-es [data-es].inline,body.lang-he [data-he].inline{display:inline}
+body.lang-he [data-es]{display:none}
+body.lang-he [data-he]{display:block}
+body.lang-en [data-he]{display:none}
+body.lang-es [data-en]{display:none}
+body.lang-es [data-he]{display:none}
+
+/* NAV */
+header.nav{position:fixed;top:48px;left:0;right:0;z-index:100;transition:.4s;padding:18px 0}
+header.nav.scrolled{background:rgba(245,240,230,.92);backdrop-filter:blur(14px);box-shadow:0 1px 0 var(--line);padding:11px 0}
+.nav-inner{display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:12px;color:var(--cream);transition:.4s}
+header.nav.scrolled .brand{color:var(--navy)}
+.brand .mark{font-family:var(--serif);font-weight:700;font-size:1.8rem;letter-spacing:.02em;line-height:1}
+.brand .mark b{color:var(--gold);font-weight:700}
+.brand .sub{font-family:var(--sans);font-size:.78rem;letter-spacing:.34em;text-transform:uppercase;opacity:.8;margin-top:3px}
+@media(max-width:500px){.brand .mark{font-size:1.4rem}.brand .sub{font-size:.65rem}}
+.nav-links{display:flex;align-items:center;gap:30px}
+.nav-links a{font-family:var(--sans);font-size:1.05rem;letter-spacing:.04em;color:var(--cream);font-weight:400;transition:.25s;position:relative}
+header.nav.scrolled .nav-links a{color:var(--navy)}
+.nav-links a::after{content:"";position:absolute;left:0;bottom:-5px;width:0;height:1px;background:var(--gold);transition:.3s}
+.nav-links a:hover::after{width:100%}
+.nav-links a:hover{color:var(--gold)}
+.nav-cta{padding:10px 22px;border:1px solid var(--gold);border-radius:999px;color:var(--gold)!important;font-weight:500!important}
+.nav-cta:hover{background:var(--gold);color:var(--navy)!important}
+.nav-cta::after{display:none}
+.nav-right{display:flex;align-items:center;gap:10px}
+.lang-switch{display:flex;gap:2px;border:1px solid rgba(201,162,75,.5);border-radius:999px;padding:3px}
+.lang-switch button{font-family:var(--sans);background:none;border:none;color:var(--cream);font-size:.7rem;letter-spacing:.08em;padding:5px 11px;border-radius:999px;cursor:pointer;transition:.25s;font-weight:500}
+header.nav.scrolled .lang-switch button{color:var(--navy)}
+.lang-switch button.active{background:var(--gold);color:var(--navy)}
+.burger{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:pointer;padding:6px}
+.burger span{width:26px;height:2px;background:var(--cream);transition:.3s}
+header.nav.scrolled .burger span{background:var(--navy)}
+
+/* HERO */
+.hero{position:relative;min-height:100svh;display:flex;align-items:flex-end;justify-content:center;text-align:center;overflow:hidden;background:var(--navy)}
+.hero-bg{position:absolute;inset:0;z-index:0}
+.hero-bg img{width:100%;height:100%;object-fit:cover;object-position:center 55%;opacity:1}
+.hero-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(to bottom,rgba(20,20,20,.35) 0%,rgba(20,20,20,.08) 28%,rgba(20,20,20,.5) 64%,rgba(20,20,20,.9) 100%)}
+.hero-content{position:relative;z-index:2;padding:0 24px 84px;max-width:880px}
+.hero .eyebrow{color:var(--gold-soft);margin-bottom:24px;animation:fade-up 1s .1s both}
+.hero h1{color:var(--cream);font-size:clamp(2.8rem,8vw,6rem);font-weight:500;letter-spacing:-.015em;line-height:.98;text-shadow:0 2px 30px rgba(0,0,0,.35);animation:fade-up 1s .25s both}
+.hero h1 em{font-style:italic;color:var(--gold-soft)}
+.hero-sub{color:var(--cream);font-family:var(--serif);font-style:italic;font-size:clamp(1.15rem,2.8vw,1.7rem);font-weight:400;margin:18px 0 0;letter-spacing:.01em;text-shadow:0 2px 20px rgba(0,0,0,.4);animation:fade-up 1s .4s both}
+.hero .tagline{color:rgba(251,248,241,.86);font-size:clamp(1.05rem,2.4vw,1.4rem);font-family:var(--serif);font-style:italic;margin:26px 0 38px;animation:fade-up 1s .4s both}
+.hero-actions{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;animation:fade-up 1s .55s both}
+.btn{font-family:var(--sans);display:inline-flex;align-items:center;gap:9px;padding:15px 32px;border-radius:999px;font-size:.85rem;letter-spacing:.06em;font-weight:500;cursor:pointer;transition:.3s;border:1px solid transparent}
+.btn-gold{background:var(--gold);color:var(--navy)}
+.btn-gold:hover{background:var(--gold-2);transform:translateY(-2px);box-shadow:0 12px 30px -10px rgba(201,162,75,.6)}
+.btn-ghost{border-color:rgba(251,248,241,.5);color:var(--cream)}
+.btn-ghost:hover{background:rgba(251,248,241,.1);border-color:var(--cream)}
+.scroll-cue{position:absolute;bottom:30px;left:50%;transform:translateX(-50%);z-index:2;color:var(--gold-soft);font-size:.65rem;letter-spacing:.3em;text-transform:uppercase;animation:fade-up 1s 1s both}
+.scroll-cue::after{content:"";display:block;width:1px;height:34px;background:linear-gradient(var(--gold-soft),transparent);margin:10px auto 0;animation:cue 2s infinite}
+@keyframes cue{0%,100%{opacity:.3;transform:scaleY(.6)}50%{opacity:1;transform:scaleY(1)}}
+@keyframes fade-up{from{opacity:0;transform:translateY(24px)}to{opacity:1;transform:translateY(0)}}
+
+/* reveal on scroll */
+.reveal{opacity:0;transform:translateY(34px);transition:.9s cubic-bezier(.2,.7,.2,1)}
+.reveal.in{opacity:1;transform:none}
+
+@media(max-width:860px){
+  .nav-links{position:fixed;inset:0 0 0 auto;width:min(82vw,340px);background:var(--navy);flex-direction:column;justify-content:center;gap:28px;transform:translateX(100%);transition:.4s;box-shadow:-20px 0 60px rgba(0,0,0,.3);padding:40px}
+  .nav-links.open{transform:none}
+  .nav-links a,header.nav.scrolled .nav-links a{color:var(--cream);font-size:1rem}
+  .burger{display:flex}
+  body.lang-he .nav-links{inset:0 auto 0 0;transform:translateX(-100%)}
+  body.lang-he .nav-links.open{transform:none}
+  .lang-switch button{padding:6px 10px}
+}
+/* ===== AJUSTES RESPONSIVE FINOS PARA TODOS LOS DISPOSITIVOS ===== */
+*{box-sizing:border-box}
+img,video,iframe{max-width:100%;height:auto}
+html{-webkit-text-size-adjust:100%}
+body{overflow-x:hidden}
+@media(min-width:1440px){ .wrap{max-width:1340px} }
+@media(max-width:1280px) and (min-width:1025px){ .wrap{padding:0 32px} }
+@media(max-width:1024px){ .wrap{padding:0 28px} .suites-grid{gap:22px} }
+@media(max-width:900px){ .suites-grid{grid-template-columns:repeat(2,1fr);gap:20px} }
+@media(max-width:640px){
+  .wrap{padding:0 18px}
+  .suites-grid{grid-template-columns:1fr;gap:18px}
+  section.section{padding-top:54px;padding-bottom:54px}
+}
+@media(max-width:430px){
+  .wrap{padding:0 16px}
+  .hero-content{padding-left:18px;padding-right:18px}
+}
+@media(max-width:360px){
+  .wrap{padding:0 13px}
+  .btn{font-size:.85rem;padding:11px 18px}
+}
+@media(hover:none){
+  .btn,.tur-wa,.rp-btn,.faq-q,.wc-arrow{min-height:40px}
+}
+</style>
+</head>
+<body class="lang-es">
+
+<!-- NAV -->
+<header class="nav" id="nav">
+  <div class="wrap nav-inner">
+    <a href="#top" class="brand">
+      <div>
+        <div class="mark">Eshel <b>Suites</b></div>
+        <div class="sub">Panamá</div>
+      </div>
+    </a>
+    <nav class="nav-links" id="navLinks">
+      <a data-es data-en data-he class="inline" href="#suites"><span data-es>Suites</span><span data-en>Suites</span><span data-he>סוויטות</span></a>
+      <a href="#propiedad"><span data-es>La Propiedad</span><span data-en>The Property</span><span data-he>הנכס</span></a>
+      <a href="#vida-judia"><span data-es>Vida Judía</span><span data-en>Jewish Life</span><span data-he>חיים יהודיים</span></a>
+      <a href="#shabat"><span data-es>Shabat</span><span data-en>Shabbat</span><span data-he>שבת</span></a>
+      <a href="#turismo"><span data-es>Turismo</span><span data-en>Tourism</span><span data-he>תיירות</span></a>
+      <a href="#kosher"><span data-es>Kosher</span><span data-en>Kosher</span><span data-he>כשר</span></a>
+      <a href="#resenas"><span data-es>Reseñas</span><span data-en>Reviews</span><span data-he>ביקורות</span></a>
+      <a href="#faq"><span data-es>FAQ</span><span data-en>FAQ</span><span data-he>שאלות</span></a>
+      <a href="#contacto"><span data-es>Contacto</span><span data-en>Contact</span><span data-he>צור קשר</span></a>
+      <a class="nav-cta" href="https://hotels.cloudbeds.com/reservation/JNyUrT" target="_blank" rel="noopener"><span data-es>Reservar</span><span data-en>Book Now</span><span data-he>הזמנה</span></a>
+    </nav>
+    <div class="nav-right">
+      <div class="lang-switch" id="langSwitch">
+        <button data-lang="es" class="active">ES</button>
+        <button data-lang="en">EN</button>
+        <button data-lang="he">עב</button>
+      </div>
+      <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="hero-bg"><img src="assets/kingston/kingston-03.webp" alt="Eshel Suites Panamá"></div>
+  <div class="hero-content">
+    <div class="eyebrow"><span data-es>Aparthotel de lujo en Paitilla, Panamá</span><span data-en>Luxury aparthotel in Paitilla, Panama</span><span data-he>אפארטהוטל יוקרה בפייטיה, פנמה</span></div>
+    <h1><span data-es>Tu hogar <em>lejos de casa</em></span><span data-en>Your home <em>away from home</em></span><span data-he>הבית שלך <em>הרחק מהבית</em></span></h1>
+    <p class="hero-sub"><span data-es>Aparthotel boutique en el corazón de Paitilla</span><span data-en>Boutique aparthotel in the heart of Paitilla</span><span data-he>אירוח בוטיק בלב פייטיה</span></p>
+    <div class="hero-actions">
+      <a class="btn btn-gold" href="https://hotels.cloudbeds.com/reservation/JNyUrT" target="_blank" rel="noopener"><span data-es>Reservar ahora</span><span data-en>Book now</span><span data-he>להזמנה</span></a>
+      <a class="btn btn-ghost" href="#suites"><span data-es>Ver las suites</span><span data-en>Explore suites</span><span data-he>לצפייה בסוויטות</span></a>
+    </div>
+  </div>
+  
+</section>
+
+<!-- WELCOME -->
+<section class="section welcome" id="welcome">
+  <div class="wrap welcome-grid">
+    <div class="welcome-text reveal">
+      <div class="eyebrow"><span data-es>Bienvenidos a Eshel Suites</span><span data-en>Welcome to Eshel Suites</span><span data-he>ברוכים הבאים</span></div>
+      <h2><span data-es>Una experiencia única, cómoda y elegante</span><span data-en>A unique, comfortable & elegant experience</span><span data-he>חוויה ייחודית, נוחה ואלגנטית</span></h2>
+      <div class="gold-rule" style="margin-left:0"></div>
+      <p><span data-es>Ubicado en el corazón de Paitilla, Eshel Suites te conecta con lo mejor de Ciudad de Panamá. Camina a restaurantes, cafés, supermercados, farmacias, parques y la Cinta Costera, mientras disfrutas de un entorno tranquilo y exclusivo. Nuestras suites combinan amplitud, diseño contemporáneo y confort para ofrecer una estancia donde la comodidad y la ubicación perfecta se unen para crear una experiencia inolvidable.</span><span data-en>Located in the heart of Paitilla, Eshel Suites connects you to the best of Panama City. Walk to restaurants, cafés, supermarkets, pharmacies, parks and the Cinta Costera, while enjoying a peaceful, exclusive setting. Our suites combine spaciousness, contemporary design and comfort to offer a stay where convenience and the perfect location unite to create an unforgettable experience.</span><span data-he>אשל סוויטס הוא אפارטהוטל בוטיק בלב פייטיה, המיועד למי שמחפש שהות נוחה ורגועה עם כל מה שצריך לחיות אורח חיים יהודי מלא. כל סוויטה משלבת סגנון מודרני עם גימור יוקרתי, חללים מרווחים וריהוט איכותי.</span></p>
+      <div class="welcome-stats">
+        <div>
+          <svg style="width:28px;height:28px;color:var(--gold-2)" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+          <b>9</b>
+          <span data-es>alojamientos</span><span data-en>accommodations</span><span data-he>יחידות</span>
+        </div>
+        <div class="stat-gem">
+          <span class="stat-icon">🇵🇦</span>
+          <span data-es>Panamá, la joya de América</span><span data-en>Panama, the Gem of the Americas</span><span data-he>פנמה, אבן החן של אמריקה</span>
+        </div>
+        <div>
+          <svg style="width:28px;height:28px;color:var(--gold-2)" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 21s-7-4.5-7-10a7 7 0 0114 0c0 5.5-7 10-7 10z"/><circle cx="12" cy="11" r="2.5"/></svg>
+          <b>Paitilla</b>
+          <span data-es>a pasos de todo</span><span data-en>steps from everything</span><span data-he>קרוב לכל</span>
+        </div>
+      </div>
+    </div>
+    <div class="welcome-carousel reveal">
+      <div class="wc-track" id="wcTrack">
+        <figure class="wc-slide"><img src="assets/propiedad/fachada.webp" alt="Fachada" loading="lazy"></figure>
+        <figure class="wc-slide"><img src="assets/propiedad/terraza-mesa-alta.webp" alt="Terraza" loading="lazy"></figure>
+        <figure class="wc-slide"><img src="assets/propiedad/lounge.webp" alt="Mesa y sillas" loading="lazy"></figure>
+        <figure class="wc-slide"><img src="assets/propiedad/terraza-sillones.webp" alt="Área de descanso" loading="lazy"></figure>
+        <figure class="wc-slide"><img src="assets/propiedad/comedor.webp" alt="Comedor" loading="lazy"></figure>
+        <figure class="wc-slide"><img src="assets/propiedad/entrada-exterior.webp" alt="Entrada y recepción" loading="lazy"></figure>
+        <figure class="wc-slide"><img src="assets/propiedad/lobby-rebe.webp" alt="Lobby" loading="lazy"></figure>
+        <figure class="wc-slide"><img src="assets/propiedad/retrato-rebe.webp" alt="Retrato del Rebe" loading="lazy"></figure>
+        <figure class="wc-slide"><img src="assets/coworking/coworking-01.webp" alt="Coworking" loading="lazy"></figure>
+        <figure class="wc-slide"><img src="assets/coworking/coworking-03.webp" alt="Coworking" loading="lazy"></figure>
+        <figure class="wc-slide"><img src="assets/coworking/coworking-02.webp" alt="Vista al mar" loading="lazy"></figure>
+      </div>
+      <button class="wc-arrow wc-prev" id="wcPrev" aria-label="Anterior">‹</button>
+      <button class="wc-arrow wc-next" id="wcNext" aria-label="Siguiente">›</button>
+    </div>
+  </div>
+</section>
+
+<style>
+.welcome-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(30px,5vw,72px);align-items:center}
+.welcome-text p{color:var(--muted);font-size:1.12rem;margin-top:14px;line-height:1.7}
+.welcome-stats{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:34px}
+.welcome-stats div{display:flex;flex-direction:column;align-items:center;text-align:center;background:var(--bone-2);border:1px solid rgba(201,162,75,.25);border-radius:10px;padding:20px 14px;gap:7px;box-shadow:0 2px 12px rgba(28,28,28,.06)}
+.welcome-stats b{font-family:var(--serif);font-size:2.2rem;color:var(--gold-2);font-weight:600;line-height:1}
+.welcome-stats .stat-gem{font-family:var(--serif);font-size:.95rem;color:var(--gold-2);font-weight:600;font-style:italic;align-self:center}
+.welcome-stats .stat-icon{font-size:1.6rem;line-height:1}
+.welcome-stats span{font-size:.75rem;letter-spacing:.04em;color:var(--muted);text-transform:uppercase;margin-top:2px}
+@media(max-width:480px){.welcome-stats{grid-template-columns:1fr 1fr}}
+.welcome-carousel{position:relative;width:100%}
+.wc-track{display:flex;gap:14px;overflow-x:auto;scroll-behavior:smooth;-webkit-overflow-scrolling:touch;padding-bottom:8px}
+.wc-track::-webkit-scrollbar{height:6px}
+.wc-track::-webkit-scrollbar-thumb{background:var(--gold-soft);border-radius:3px}
+.wc-slide{flex:0 0 78%;scroll-snap-align:center;margin:0;position:relative;border-radius:10px;overflow:hidden;box-shadow:var(--shadow)}
+.wc-slide img{width:100%;height:340px;object-fit:cover;display:block}
+
+.wc-arrow{position:absolute;top:50%;transform:translateY(-50%);width:42px;height:42px;border-radius:50%;border:none;background:rgba(251,248,241,.92);color:var(--navy);font-size:1.6rem;line-height:1;cursor:pointer;box-shadow:var(--shadow);z-index:3;display:flex;align-items:center;justify-content:center;transition:.2s}
+.wc-arrow:hover{background:var(--gold-2);color:#fff}
+.wc-prev{left:8px}.wc-next{right:8px}
+body.lang-he .wc-prev{left:auto;right:8px}body.lang-he .wc-next{right:auto;left:8px}
+@media(min-width:861px){.wc-slide{flex:0 0 48%}.wc-slide img{height:380px}}
+@media(max-width:860px){.welcome-grid{grid-template-columns:1fr}}
+
+/* SUITES */
+.suites{background:linear-gradient(180deg,var(--bone),var(--bone-2))}
+.suites-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+@media(max-width:980px){.suites-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:620px){.suites-grid{grid-template-columns:1fr}}
+.suite-card{background:var(--cream);border-radius:8px;overflow:hidden;box-shadow:0 10px 34px -20px rgba(28,28,28,.4);transition:.45s;display:flex;flex-direction:column;border:1px solid rgba(201,162,75,.16);cursor:pointer}
+.suite-card:hover{transform:translateY(-6px);box-shadow:0 26px 56px -24px rgba(28,28,28,.5)}
+.suite-card.flagship{grid-column:span 3;flex-direction:row}
+@media(max-width:980px){.suite-card.flagship{grid-column:span 2;flex-direction:column}}
+@media(max-width:620px){.suite-card.flagship{grid-column:span 1}}
+.suite-media{position:relative;aspect-ratio:4/3;overflow:hidden;background:var(--navy)}
+.suite-card.flagship .suite-media{flex:1.1;aspect-ratio:auto;min-height:320px;max-height:480px}
+.suite-media img{width:100%;height:100%;object-fit:cover;transition:.7s}
+.suite-card:hover .suite-media img{transform:scale(1.05)}
+.suite-media .badge{position:absolute;top:14px;left:14px;background:rgba(28,28,28,.86);color:var(--gold-soft);font-family:var(--sans);font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;padding:6px 13px;border-radius:999px;backdrop-filter:blur(4px);z-index:2}
+body.lang-he .suite-media .badge{left:auto;right:14px}
+.suite-media .num{position:absolute;bottom:12px;right:14px;font-family:var(--serif);font-size:2.4rem;color:rgba(251,248,241,.92);font-weight:600;text-shadow:0 2px 14px rgba(0,0,0,.4);line-height:1}
+body.lang-he .suite-media .num{right:auto;left:14px}
+.suite-media .pending{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:8px;background:linear-gradient(135deg,var(--navy),var(--navy-soft));color:var(--gold-soft);text-align:center;padding:20px}
+.suite-media .pending svg{width:34px;height:34px;opacity:.7}
+.suite-media .pending span{font-family:var(--sans);font-size:.74rem;letter-spacing:.1em;text-transform:uppercase}
+.suite-media video{width:100%;height:100%;object-fit:cover;position:absolute;inset:0}
+.suite-media .suite-video{z-index:1}
+.suite-media .suite-cover{width:100%;height:100%;object-fit:cover;position:absolute;inset:0;z-index:2;transition:opacity 1.2s ease}
+.suite-media:hover .suite-cover{opacity:0}
+.suite-media{position:relative}
+.suite-body{padding:22px 24px 24px;display:flex;flex-direction:column;flex:1}
+.suite-card.flagship .suite-body{flex:1;justify-content:flex-start;padding:clamp(20px,3vw,36px)}
+.suite-name{display:flex;align-items:baseline;justify-content:space-between;gap:10px}
+.suite-name h3{font-size:1.7rem}
+.suite-card.flagship .suite-name h3{font-size:clamp(2rem,3.4vw,2.8rem)}
+.suite-cap{font-family:var(--sans);font-size:.74rem;letter-spacing:.08em;text-transform:uppercase;color:var(--gold-2);white-space:nowrap}
+.suite-beds{font-family:var(--sans);font-size:.92rem;color:var(--navy-soft);margin:6px 0 2px;font-weight:400}
+.suite-amenities{display:flex;gap:12px;flex-wrap:wrap;margin:8px 0 4px;padding:10px 0;border-top:1px solid var(--bone-2);border-bottom:1px solid var(--bone-2)}
+.suite-amen{display:flex;align-items:center;gap:5px;font-family:var(--sans);font-size:.76rem;color:var(--muted)}
+.suite-amen svg{width:14px;height:14px;color:var(--gold-2);flex-shrink:0}
+.suite-blurb{color:var(--muted);font-size:1rem;margin:8px 0 14px;flex:1}
+.suite-foot{display:flex;align-items:flex-end;justify-content:space-between;gap:14px;flex-wrap:wrap;margin-top:auto}
+.suite-price .from{font-family:var(--sans);font-size:.68rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);display:block}
+.suite-price .amt{font-family:var(--serif);font-size:2rem;color:var(--navy);font-weight:600;line-height:1}
+.suite-price .amt small{font-size:.9rem;color:var(--muted);font-weight:400}
+.suite-price .fee{font-family:var(--sans);font-size:.68rem;color:var(--muted);display:block;margin-top:3px}
+.suite-book{padding:11px 20px;border-radius:999px;background:var(--navy);color:var(--cream);font-family:var(--sans);font-size:.78rem;letter-spacing:.06em;font-weight:500;transition:.3s;white-space:nowrap}
+.suite-book:hover{background:var(--gold);color:var(--navy)}
+.suite-extras{font-family:var(--sans);font-size:.72rem;color:var(--gold-2);margin-top:10px;display:flex;align-items:center;gap:6px}
+.suite-gallery-btn{font-family:var(--sans);font-size:.74rem;letter-spacing:.04em;color:var(--gold-2);cursor:pointer;background:none;border:none;padding:0;margin-top:4px;display:inline-flex;align-items:center;gap:5px;transition:.25s}
+.suite-gallery-btn:hover{color:var(--navy);gap:9px}
+.price-note{text-align:center;color:var(--muted);font-size:.84rem;margin-top:30px;font-style:italic}
+</style>
+
+<section class="section suites" id="suites">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow"><span data-es>Alojamientos</span><span data-en>Accommodations</span><span data-he>יחידות אירוח</span></div>
+      <h2><span data-es>Nuestras suites</span><span data-en>Our suites</span><span data-he>הסוויטות שלנו</span></h2>
+      <div class="gold-rule"></div>
+      <p><span data-es>Nueve alojamientos, cada uno con su propio carácter. Todos equipados con aire acondicionado, TV 43&quot;, WiFi, caja de seguridad, minibar, microondas, cafetera, y más.</span><span data-en>Nine accommodations, each with its own character. All equipped with A/C, 43&quot; TV, WiFi, safe, minibar, microwave, coffee maker, and more.</span><span data-he>תשע יחידות, לכל אחת אופי משלה. כולן מצוידות במיזוג, טלוויזיה 43 אינץ׳, WiFi, כספת, מיניבר, מיקרוגל ומכונת קפה.</span></p>
+    </div>
+    <div class="suites-grid reveal" id="suitesGrid"></div>
+    <p class="price-note">
+      <span data-es>Todas las tarifas son &laquo;desde&raquo; (temporada baja) por noche, sujetas a disponibilidad y fechas. Se aplican 10% de impuesto hotelero y tarifa de limpieza. Mínimo 2 noches.</span>
+      <span data-en>All rates are &laquo;from&raquo; (low season) per night, subject to availability and dates. 10% hotel tax and cleaning fee apply. 2-night minimum.</span>
+      <span data-he>כל המחירים הם &laquo;החל מ&raquo; (עונה נמוכה) ללילה, בכפוף לזמינות ולתאריכים. חל מס מלון 10% ודמי ניקיון. מינימום 2 לילות.</span>
+    </p>
+  </div>
+</section>
+
+<!-- PROPERTY -->
+<style>
+.property{background:var(--navy);color:var(--cream);position:relative;overflow:hidden}
+.property .section-head h2{color:var(--cream)}
+.property .section-head p{color:rgba(251,248,241,.7)}
+.property .eyebrow{color:var(--gold-soft)}
+.prop-mosaic{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:200px;gap:14px}
+.prop-mosaic figure{overflow:hidden;border-radius:6px;position:relative}
+.prop-mosaic img{width:100%;height:100%;object-fit:cover;transition:.7s}
+.prop-mosaic figure:hover img{transform:scale(1.06)}
+.prop-mosaic figure figcaption{position:absolute;left:0;bottom:0;right:0;padding:26px 16px 12px;background:linear-gradient(transparent,rgba(20,28,48,.8));color:var(--cream);font-family:var(--serif);font-size:1.05rem;font-style:italic}
+.m-a{grid-column:span 2;grid-row:span 2}
+.m-b{grid-column:span 2}
+.m-c,.m-d,.m-e{grid-column:span 1}
+.m-d{grid-column:span 1;grid-row:span 1}
+@media(max-width:860px){.prop-mosaic{grid-template-columns:repeat(2,1fr);grid-auto-rows:150px}.m-a{grid-column:span 2;grid-row:span 2}.m-b{grid-column:span 2}}
+.amenities-band{display:flex;flex-wrap:wrap;gap:10px;justify-content:center;margin-top:54px;padding-top:44px;border-top:1px solid rgba(201,162,75,.22)}
+.amenities-band div{background:rgba(255,255,255,.07);border:1px solid rgba(201,162,75,.25);border-radius:999px;padding:8px 18px;font-family:var(--sans);font-size:.88rem;color:rgba(251,248,241,.88);letter-spacing:.03em}
+</style>
+<section class="section property" id="propiedad">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow"><span data-es>Nuestra propiedad</span><span data-en>Our property</span><span data-he>הנכס שלנו</span></div>
+      <h2><span data-es>Pensado en cada detalle</span><span data-en>Designed in every detail</span><span data-he>מתוכנן לפרטי פרטים</span></h2>
+      <div class="gold-rule"></div>
+      <p><span data-es>Desde la recepción hasta el área común de coworking, cada espacio respira calidez boutique y atención al detalle.</span><span data-en>From the reception to the coworking lounge, every space breathes boutique warmth and attention to detail.</span><span data-he>מהקבלה ועד חלל העבודה המשותף, כל מרחב נושם חמימות בוטיק ותשומת לב לפרטים.</span></p>
+    </div>
+    <div class="prop-mosaic reveal">
+      <figure class="m-a"><img src="assets/propiedad/recepcion-logo.webp" alt="Recepción" loading="lazy"><figcaption data-es>Recepción</figcaption><figcaption data-en>Reception</figcaption><figcaption data-he>קבלה</figcaption></figure>
+      <figure class="m-b"><img src="assets/coworking/coworking-02.webp" alt="Coworking" loading="lazy"><figcaption data-es>Sala común &amp; coworking</figcaption><figcaption data-en>Common lounge &amp; coworking</figcaption><figcaption data-he>חלל משותף</figcaption></figure>
+      <figure class="m-c"><img src="assets/propiedad/sillas-escalera.webp" alt="Lounge" loading="lazy"></figure>
+      <figure class="m-d"><img src="assets/coworking/coworking-04.webp" alt="Coworking" loading="lazy"></figure>
+      <figure class="m-e"><img src="assets/propiedad/entrada-noche.webp" alt="Entrada" loading="lazy"><figcaption data-es>Entrada</figcaption><figcaption data-en>Entrance</figcaption><figcaption data-he>כניסה</figcaption></figure>
+    </div>
+    <div class="amenities-band reveal">
+      <div><span data-es>2 áreas de lavandería de autoservicio</span><span data-en>2 self-service laundry areas</span><span data-he>2 חדרי כביסה עצמית</span></div>
+      <div><span data-es>Coworking</span><span data-en>Coworking</span><span data-he>חלל עבודה</span></div>
+      <div><span data-es>Terraza en la entrada</span><span data-en>Entrance terrace</span><span data-he>מרפסת בכניסה</span></div>
+      <div><span data-es>Lobby</span><span data-en>Lobby</span><span data-he>לובי</span></div>
+      <div><span data-es>WiFi &amp; internet por cable</span><span data-en>WiFi &amp; wired internet</span><span data-he>WiFi ואינטרנט</span></div>
+      <div><span data-es>CCTV &amp; alarma de seguridad</span><span data-en>CCTV &amp; security alarm</span><span data-he>אבטחה ומצלמות</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- JEWISH LIFE -->
+<style>
+.jewish{background:var(--cream)}
+.jewish-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(30px,5vw,64px);align-items:center}
+.jewish-img{position:relative;border-radius:8px;overflow:hidden;box-shadow:var(--shadow);aspect-ratio:4/5}
+.jewish-img img{width:100%;height:100%;object-fit:cover}
+.kosher-feats{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:28px}
+.kfeat{background:var(--bone);border:1px solid rgba(201,162,75,.2);border-radius:7px;padding:18px 18px 16px;transition:.3s}
+.kfeat:hover{border-color:var(--gold);transform:translateY(-3px)}
+.kfeat .ic{width:30px;height:30px;color:var(--gold-2);margin-bottom:9px}
+.kfeat h4{font-size:1.12rem;margin-bottom:3px}
+.kfeat p{font-size:.85rem;color:var(--muted);line-height:1.5}
+@media(max-width:820px){.jewish-grid{grid-template-columns:1fr}.kosher-feats{grid-template-columns:1fr 1fr}}
+@media(max-width:520px){.kosher-feats{grid-template-columns:1fr}}
+.highlight-line{background:var(--navy);color:var(--bone);font-family:var(--serif);font-style:italic;font-size:1.05rem;padding:3px 12px;border-radius:4px;display:inline-block}
+</style>
+<section class="section jewish" id="vida-judia">
+  <div class="wrap">
+    <div class="jewish-grid">
+      <div class="jewish-img reveal"><img src="assets/judaica/talit-playa.webp" alt="Vida judía en Panamá" loading="lazy"></div>
+      <div class="reveal">
+        <div class="eyebrow"><span data-es>Vida judía</span><span data-en>Jewish life</span><span data-he>חיים יהודיים</span></div>
+        <h2><span data-es>Ideal para el huésped observante</span><span data-en>Ideal for the observant guest</span><span data-he>אידיאלי עבור האורח שומר המצוות</span></h2>
+        <div class="gold-rule" style="margin-left:0"></div>
+        <p style="color:var(--muted)"><span data-es>En Eshel, el cuidado kosher no es un añadido: es el corazón de la casa. Pensamos cada detalle para que vivas tu judaísmo con total tranquilidad, incluso en Shabat.</span><span data-en>At Eshel, kosher care isn't an add-on: it's the heart of the house. Every detail is designed so you can live your Judaism with complete peace of mind, even on Shabbat.</span><span data-he>באשל, הכשרות אינה תוספת — היא לב הבית. כל פרט תוכנן כדי שתוכלו לקיים את יהדותכם בשלווה מלאה, גם בשבת.</span></p>
+        <div class="kosher-feats">
+          <div class="kfeat"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V8a4 4 0 018 0v3"/></svg><h4><span data-es>Cerraduras de Shabat</span><span data-en>Shabbat locks</span><span data-he>מנעולי שבת</span></h4><p><span data-es>Cerraduras manuales, sin electricidad ni sensores: entra y sal en Shabat sin preocupación.</span><span data-en>Manual locks, no electricity or sensors: enter and exit on Shabbat with no concern.</span><span data-he>מנעולים ידניים, ללא חשמל או חיישנים: כניסה ויציאה בשבת ללא דאגה.</span></p></div>
+          <div class="kfeat"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 3v18M5 8h14M5 8a7 7 0 0014 0"/></svg><h4><span data-es>Estación de agua caliente, té y café</span><span data-en>Hot water, tea & coffee station</span><span data-he>תחנת מים חמים, תה וקפה</span></h4><p><span data-es>Estación de agua caliente, té y café disponible en Shabat en el coworking.</span><span data-en>Hot water, tea and coffee station available on Shabbat in the coworking area.</span><span data-he>מים חמים לשבת ויום טוב, זמינים בחלל המשותף.</span></p></div>
+          <div class="kfeat"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M12 21s-7-4.5-7-10a7 7 0 0114 0c0 5.5-7 10-7 10z"/><circle cx="12" cy="11" r="2.4"/></svg><h4><span data-es>Neguel vasser &amp; más</span><span data-en>Neguel vasser &amp; more</span><span data-he>נטל ידיים ועוד</span></h4><p><span data-es>Set para netilat yadayim, base para peluca y set de havdalá a tu disposición.</span><span data-en>Netilat yadayim set, wig stand and havdalah set at your disposal.</span><span data-he>כלי נטילה, בסיס לפאה וערכת הבדלה לרשותכם.</span></p></div>
+          <div class="kfeat"><svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><path d="M3 21h18M5 21V11l7-5 7 5v10M9 21v-6h6v6"/></svg><h4><span data-es>Sinagogas a pasos</span><span data-en>Synagogues nearby</span><span data-he>בתי כנסת בקרבת מקום</span></h4><p><span data-es>Beit Chabad, Bet El y Ahavat Tzion, todas a poca distancia a pie.</span><span data-en>Beit Chabad, Bet El and Ahavat Tzion, all a short walk away.</span><span data-he>בית חב״ד, בית אל ואהבת ציון, הכל במרחק הליכה.</span></p></div>
+        </div>
+        
+        <!-- Chabad & Beth El destacados -->
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:28px;margin-bottom:18px">
+          <a href="https://chabadpanama.com" target="_blank" rel="noopener" style="text-decoration:none">
+            <div style="background:var(--bone);border:1.5px solid var(--gold);border-radius:10px;padding:18px;display:flex;align-items:center;gap:14px;transition:.3s" onmouseover="this.style.transform='translateY(-3px)'" onmouseout="this.style.transform=''">
+              <img src="https://chabadpanama.com/favicon.ico" alt="Chabad Panama" style="width:40px;height:40px;object-fit:contain;border-radius:6px" onerror="this.style.display='none'">
+              <div>
+                <div style="font-family:var(--serif);font-size:1.1rem;font-weight:600;color:var(--navy)">Beit Chabad</div>
+                <div style="font-size:.8rem;color:var(--muted);margin:2px 0">Paitilla · Rabbi Mendi Karniel</div>
+                <div style="display:flex;gap:8px;margin-top:6px;flex-wrap:wrap">
+                  <a href="https://wa.me/50766178280" target="_blank" rel="noopener" style="font-size:.72rem;background:var(--navy);color:#fff;padding:3px 10px;border-radius:20px;font-family:var(--sans)">WhatsApp</a>
+                  <a href="https://chabadpanama.com" target="_blank" rel="noopener" style="font-size:.72rem;border:1px solid var(--gold);color:var(--gold-2);padding:3px 10px;border-radius:20px;font-family:var(--sans)">sitio web</a>
+                </div>
+              </div>
+            </div>
+          </a>
+          <a href="https://centrobethel.com" target="_blank" rel="noopener" style="text-decoration:none">
+            <div style="background:var(--bone);border:1.5px solid rgba(201,162,75,.3);border-radius:10px;padding:18px;display:flex;align-items:center;gap:14px;transition:.3s" onmouseover="this.style.transform='translateY(-3px)'" onmouseout="this.style.transform=''">
+              <img src="https://centrobethel.com/favicon.ico" alt="Beth El" style="width:40px;height:40px;object-fit:contain;border-radius:6px" onerror="this.style.display='none'">
+              <div>
+                <div style="font-family:var(--serif);font-size:1.1rem;font-weight:600;color:var(--navy)">Sinagoga Beth El</div>
+                <div style="font-size:.8rem;color:var(--muted);margin:2px 0">Paitilla · Rabbi Aharon Laine</div>
+                <div style="display:flex;gap:8px;margin-top:6px;flex-wrap:wrap">
+                  <a href="https://wa.me/50769218606" target="_blank" rel="noopener" style="font-size:.72rem;background:var(--navy);color:#fff;padding:3px 10px;border-radius:20px;font-family:var(--sans)">WhatsApp</a>
+                  <a href="https://centrobethel.com" target="_blank" rel="noopener" style="font-size:.72rem;border:1px solid var(--gold);color:var(--gold-2);padding:3px 10px;border-radius:20px;font-family:var(--sans)">sitio web</a>
+                </div>
+              </div>
+            </div>
+          </a>
+        </div>
+        <div style="margin-top:14px;background:var(--bone);border:1px solid rgba(201,162,75,.3);border-radius:8px;padding:14px 16px;font-size:.85rem;color:var(--muted)"><span data-es>🔒 Por razones de seguridad comunitaria, el acceso a las sinagogas de Panamá requiere autorización previa de cada comunidad. Completa el formulario de registro antes de tu visita: </span><span data-en>For community security reasons, access to Panama's synagogues requires prior authorization from each community. Please complete the registration form before your visit: </span><span data-he>מטעמי ביטחון קהילתי, הכניסה לבתי הכנסת בפנמה מחייבת אישור מראש מכל קהילה. אנא מלאו את טופס הרישום לפני ביקורכם: </span><a href="https://visitors.centraldsi.com" target="_blank" rel="noopener" style="color:var(--gold-2);text-decoration:underline;font-weight:500">visitors.centraldsi.com</a>.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SHABBAT -->
+<style>
+.shabbat{background:linear-gradient(160deg,#1a1a1a,#2a2a2a);color:var(--cream);position:relative;overflow:hidden;padding-bottom:clamp(40px,5vw,72px)}
+.shabbat::before{content:"";position:absolute;top:-120px;right:-120px;width:380px;height:380px;border-radius:50%;background:radial-gradient(circle,rgba(201,162,75,.12),transparent 70%)}
+.shabbat .section-head h2{color:var(--cream)}.shabbat .eyebrow{color:var(--gold-soft)}
+.shab-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center;position:relative;z-index:1}
+@media(max-width:820px){.shab-grid{grid-template-columns:1fr;gap:30px}}
+.shab-card{background:rgba(251,248,241,.06);border:1px solid rgba(201,162,75,.3);border-radius:10px;padding:26px;backdrop-filter:blur(6px)}
+.shab-card h3{color:var(--gold-soft);font-size:1.5rem;margin-bottom:6px}
+.shab-times{margin-top:18px}
+.shab-times .row{display:flex;justify-content:space-between;align-items:center;padding:13px 0;border-bottom:1px solid rgba(201,162,75,.16);font-family:var(--sans);font-size:.95rem}
+.shab-times .row:last-child{border-bottom:none}
+.shab-times .row span:first-child{color:rgba(251,248,241,.8)}
+.shab-times .row b{color:var(--gold-soft);font-family:var(--serif);font-size:1.3rem;font-weight:600}
+.shab-parasha{text-align:center;font-family:var(--serif);font-style:italic;font-size:1.2rem;color:var(--gold-soft);margin-bottom:6px}
+.shab-courtesy h3{color:var(--cream)}
+.courtesy-list{list-style:none;margin-top:18px;display:grid;gap:12px}
+.courtesy-list li{display:flex;align-items:center;gap:12px;font-family:var(--sans);font-size:.96rem;color:rgba(251,248,241,.9)}
+.courtesy-list svg{width:20px;height:20px;color:var(--gold);flex-shrink:0}
+.free-pill{display:inline-block;background:var(--gold);color:var(--navy);font-family:var(--sans);font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;font-weight:600;padding:4px 12px;border-radius:999px;margin-bottom:14px}
+.shab-loc-tabs{display:flex;gap:8px;margin-bottom:18px;flex-wrap:wrap}
+.shab-loc-tabs button{font-family:var(--sans);background:rgba(251,248,241,.08);border:1px solid rgba(201,162,75,.3);color:rgba(251,248,241,.8);padding:7px 15px;border-radius:999px;cursor:pointer;font-size:.78rem;transition:.25s}
+.shab-loc-tabs button.active{background:var(--gold);color:var(--navy);border-color:var(--gold)}
+</style>
+<section class="section shabbat" id="shabat">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow"><span data-es>Shabat &amp; Iom Tov</span><span data-en>Shabbat &amp; Yom Tov</span><span data-he>שבת ויום טוב</span></div>
+      <h2><span data-es>Todo listo para Shabat</span><span data-en>Everything ready for Shabbat</span><span data-he>הכל מוכן לשבת</span></h2>
+      <div class="gold-rule"></div>
+    </div>
+    <div class="shab-grid">
+      <div class="shab-card reveal">
+        <div class="shab-loc-tabs" id="shabTabs">
+          <button class="active" data-z="panama">Ciudad de Panamá</button>
+          <button data-z="boquete">Boquete</button>
+          <button data-z="bocas">Bocas del Toro</button>
+        </div>
+        <div class="shab-parasha" id="shabParasha">—</div>
+        <div class="shab-times" id="shabTimes">
+          <div class="row"><span data-es>Encendido de velas</span><span data-en>Candle lighting</span><span data-he>הדלקת נרות</span><b id="shabIn">—</b></div>
+          <div class="row"><span data-es>Salida de Shabat</span><span data-en>Havdalah</span><span data-he>צאת שבת</span><b id="shabOut">—</b></div>
+        </div>
+        <p style="font-size:.76rem;color:rgba(251,248,241,.6);margin-top:16px;text-align:center" data-es>Horarios en vivo vía Hebcal · verifica siempre localmente</p>
+        <p style="font-size:.76rem;color:rgba(251,248,241,.6);margin-top:16px;text-align:center" data-en>Live times via Hebcal · always verify locally</p>
+        <p style="font-size:.76rem;color:rgba(251,248,241,.6);margin-top:16px;text-align:center" data-he>זמנים בזמן אמת דרך Hebcal · אמת תמיד מקומית</p>
+      </div>
+      <div class="shab-card shab-courtesy reveal">
+        <span class="free-pill"><span data-es>Cortesía sin costo</span><span data-en>Free courtesy</span><span data-he>ללא עלות</span></span>
+        <h3><span data-es>En el coworking, cada Shabat</span><span data-en>In the coworking, every Shabbat</span><span data-he>בחלל המשותף, בכל שבת</span></h3>
+        <p style="color:rgba(251,248,241,.78);font-size:.95rem;margin-top:8px"><span data-es>Llegas y todo está dispuesto para ti, para entrar y salir de Shabat sin preocuparte de nada.</span><span data-en>You arrive and everything is set for you, to enter and exit Shabbat without a worry.</span><span data-he>אתם מגיעים והכל מוכן עבורכם, להיכנס ולצאת מהשבת ללא דאגה.</span></p>
+        <ul class="courtesy-list">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 4h14v8a7 7 0 01-14 0z"/><path d="M3 20h18"/></svg><span data-es>Plancha de Shabat (plata)</span><span data-en>Shabbat warming plate</span><span data-he>פלטה של שבת</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2v6M9 8h6l-1 4H10z"/><path d="M12 12v8"/></svg><span data-es>Velas de Shabat</span><span data-en>Shabbat candles</span><span data-he>נרות שבת</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M6 4h12v5a6 6 0 01-12 0z"/><path d="M9 20h6"/></svg><span data-es>Urna de agua caliente, café y té</span><span data-en>Hot water, tea Hot water urn coffee station, coffee &amp; tea</span><span data-he>מיחם, קפה ותה</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 3v18"/><path d="M8 7l4-4 4 4"/></svg><span data-es>Set de Havdalá: vela, besamim y vino</span><span data-en>Havdalah set: candle, besamim &amp; wine</span><span data-he>ערכת הבדלה: נר, בשמים ויין</span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TURISMO PANAMA -->
+<style>
+.turismo{background:var(--cream)}
+.tur-tabs{display:flex;gap:10px;justify-content:center;flex-wrap:wrap;margin-bottom:44px}
+.tur-tab{padding:8px 22px;border-radius:30px;border:1.5px solid var(--gold-soft);background:transparent;font-family:var(--sans);font-size:.78rem;letter-spacing:.05em;text-transform:uppercase;cursor:pointer;color:var(--navy);transition:.2s}
+.tur-tab.active,.tur-tab:hover{background:var(--gold-2);border-color:var(--gold-2);color:#fff}
+.tur-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:24px}
+.tur-card{background:#fff;border-radius:12px;overflow:hidden;box-shadow:var(--shadow);transition:transform .25s,box-shadow .25s;display:flex;flex-direction:column}
+.tur-card:hover{transform:translateY(-5px)}
+.tur-card-img{position:relative;height:175px;overflow:hidden;background:var(--bone-2)}
+.tur-card-img img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.tur-card:hover .tur-card-img img{transform:scale(1.06)}
+.tur-badge{position:absolute;top:10px;left:10px;background:rgba(28,28,28,.72);color:#fff;font-size:.68rem;letter-spacing:.04em;text-transform:uppercase;padding:4px 11px;border-radius:20px;backdrop-filter:blur(4px)}
+body.lang-he .tur-badge{left:auto;right:10px}
+.tur-card-body{padding:16px 18px 18px;flex:1;display:flex;flex-direction:column}
+.tur-card-body h4{font-family:var(--serif);font-size:1.3rem;color:var(--navy);margin-bottom:6px;font-weight:600}
+.tur-card-body p{font-size:.9rem;color:var(--muted);line-height:1.6;flex:1}
+.tur-card-foot{display:flex;align-items:center;justify-content:space-between;margin-top:14px;gap:8px}
+.tur-dist{font-size:.74rem;color:var(--muted);display:flex;align-items:center;gap:5px}
+.tur-loc{font-size:.78rem;color:var(--gold-2);display:flex;align-items:flex-start;gap:5px;margin:10px 0 2px;line-height:1.45}
+.tur-loc svg{width:13px;height:13px;flex-shrink:0;opacity:.7;margin-top:2px}
+.tur-howto{margin:12px 0 4px;padding:11px 13px;background:var(--bone);border-radius:9px;border:1px solid var(--bone-2)}
+.tur-howto-label{display:flex;align-items:center;gap:6px;font-family:var(--sans);font-size:.72rem;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--navy);margin-bottom:5px}
+.tur-howto-label svg{width:14px;height:14px;flex-shrink:0;color:var(--gold-2)}
+.tur-howto-text{font-size:.85rem;color:var(--muted);line-height:1.6;margin:0}
+.tur-wa{display:inline-flex;align-items:center;gap:6px;font-size:.74rem;font-weight:600;letter-spacing:.03em;text-transform:uppercase;color:#fff;background:var(--gold-2);border:1.5px solid var(--gold-2);border-radius:22px;padding:8px 16px;text-decoration:none;transition:.2s;white-space:nowrap}
+.tur-wa:hover{background:var(--navy);border-color:var(--navy)}
+.tur-wa svg{width:15px;height:15px;flex-shrink:0}
+.tur-date{display:flex;align-items:center;gap:7px;margin:12px 0 0;font-size:.74rem;color:var(--navy);flex-wrap:wrap}
+.tur-date svg{width:14px;height:14px;flex-shrink:0;color:var(--gold-2)}
+.tur-date label{font-weight:600;letter-spacing:.03em}
+.tur-date-input{font-family:var(--sans);font-size:.78rem;color:var(--navy);border:1.5px solid var(--gold-soft);border-radius:8px;padding:5px 9px;background:var(--cream);cursor:pointer;flex:1;min-width:120px}
+.tur-date-input:focus{outline:none;border-color:var(--gold-2)}
+.faq-sec{background:var(--bone)}
+.reviews-sec{background:var(--cream)}
+.reviews-placeholder{max-width:560px;margin:0 auto;text-align:center;padding:48px 32px;background:var(--bone);border:1.5px dashed var(--gold-soft);border-radius:16px}
+.rp-stars-icon{width:46px;height:46px;color:var(--gold-2);margin:0 auto 6px;display:block}
+.rp-stars{font-size:1.5rem;color:var(--gold-2);letter-spacing:4px;margin-bottom:14px}
+.rp-title{font-family:var(--serif);font-size:1.3rem;font-weight:600;color:var(--navy);margin:0 0 10px}
+.rp-text{font-size:.95rem;color:var(--muted);line-height:1.6;margin:0 auto 22px;max-width:420px}
+.rp-btn{display:inline-block;font-family:var(--sans);font-size:.9rem;font-weight:600;color:#fff;background:var(--gold-2);padding:11px 26px;border-radius:30px;text-decoration:none;transition:.2s}
+.rp-btn:hover{background:var(--navy)}
+.faq-list{max-width:760px;margin:0 auto;display:flex;flex-direction:column;gap:12px}
+.faq-item{background:var(--cream);border:1px solid var(--bone-2);border-radius:12px;overflow:hidden;transition:.2s}
+.faq-item.open{border-color:var(--gold-soft);box-shadow:var(--shadow)}
+.faq-q{display:flex;align-items:center;justify-content:space-between;gap:14px;width:100%;padding:18px 22px;cursor:pointer;font-family:var(--serif);font-size:1.12rem;font-weight:600;color:var(--navy);text-align:start;background:none;border:none;line-height:1.35}
+.faq-q:hover{color:var(--gold-2)}
+.faq-q .faq-ico{flex-shrink:0;width:22px;height:22px;position:relative;transition:.3s}
+.faq-item.open .faq-ico{transform:rotate(45deg)}
+.faq-q .faq-ico::before,.faq-q .faq-ico::after{content:"";position:absolute;background:var(--gold-2);border-radius:2px}
+.faq-q .faq-ico::before{top:50%;left:2px;right:2px;height:2px;transform:translateY(-50%)}
+.faq-q .faq-ico::after{left:50%;top:2px;bottom:2px;width:2px;transform:translateX(-50%)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .35s ease,padding .35s ease;padding:0 22px}
+.faq-item.open .faq-a{max-height:600px;padding:0 22px 20px}
+.faq-a .faq-a-body{font-size:.92rem;color:var(--muted);line-height:1.65}
+.faq-a p{font-size:.92rem;color:var(--muted);line-height:1.65;margin:0}
+.faq-a p+p{margin-top:10px}
+.faq-more{display:inline-block;margin-top:12px;font-family:var(--sans);font-size:.82rem;font-weight:600;color:var(--gold-2);background:none;border:none;border-bottom:1.5px solid var(--gold-soft);padding:2px 0;cursor:pointer;transition:.2s}
+.faq-more:hover{color:var(--navy);border-color:var(--navy)}
+.faq-more.active{color:var(--navy)}
+.faq-policy{max-height:0;overflow:hidden;transition:max-height .4s ease;margin-top:0}
+.faq-policy.open{max-height:800px;margin-top:14px}
+.faq-policy p{font-size:.88rem;color:var(--muted);line-height:1.6;margin:0 0 8px}
+.faq-policy p b{color:var(--navy)}
+.tur-dist svg{width:13px;height:13px;flex-shrink:0;opacity:.55}
+.tur-btn{display:inline-flex;align-items:center;gap:5px;font-size:.72rem;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--gold-2);border:1.5px solid var(--gold-soft);border-radius:20px;padding:6px 13px;text-decoration:none;transition:.18s;white-space:nowrap}
+.tur-btn:hover{background:var(--gold-2);color:#fff;border-color:var(--gold-2)}
+.tur-btn svg{width:11px;height:11px}
+.tur-ph{width:100%;height:100%;display:flex;align-items:center;justify-content:center;background:linear-gradient(135deg,var(--bone),var(--bone-2));color:var(--gold-2)}
+.tur-ph svg{width:38px;height:38px;opacity:.4}
+@media(max-width:600px){.tur-grid{grid-template-columns:1fr 1fr}.tur-card-img{height:135px}.tur-card-body h4{font-size:1.12rem}}
+@media(max-width:380px){.tur-grid{grid-template-columns:1fr}}
+</style>
+
+<section class="section turismo" id="turismo">
+  <div class="wrap">
+    <div class="section-head reveal" style="text-align:center">
+      <div class="eyebrow"><span data-es>Descubre Panamá</span><span data-en>Discover Panama</span><span data-he>גלו את פנמה</span></div>
+      <h2><span data-es>Panamá, la joya de América</span><span data-en>Panama, the Gem of the Americas</span><span data-he>פנמה, אבן החן של אמריקה</span></h2>
+      <div class="gold-rule" style="margin:18px auto"></div>
+      <p style="max-width:680px;margin:0 auto"><span data-es>Un país pequeño con todo: canal histórico, selvas vírgenes, playas de dos océanos, comunidades indígenas y una vibrante vida urbana. Todo a minutos de Eshel.</span><span data-en>A small country with everything: historic canal, virgin jungles, beaches on two oceans, indigenous communities and vibrant city life. All minutes from Eshel.</span><span data-he>מדינה קטנה עם הכל: תעלה היסטורית, יערות בתוליים, חופים בשני אוקיינוסים, קהילות ילידיות וחיי עיר תוססים. הכל דקות מאשל.</span></p>
+    </div>
+
+    <div class="tur-tabs" style="margin-top:36px">
+      <button class="tur-tab active" data-filter="all"><span data-es>Todo</span><span data-en>All</span><span data-he>הכל</span></button>
+      <button class="tur-tab" data-filter="ciudad"><span data-es>En la ciudad</span><span data-en>In the city</span><span data-he>בעיר</span></button>
+      <button class="tur-tab" data-filter="playas"><span data-es>Playas e islas</span><span data-en>Beaches & islands</span><span data-he>חופים ואיים</span></button>
+      <button class="tur-tab" data-filter="naturaleza"><span data-es>Naturaleza</span><span data-en>Nature</span><span data-he>טבע</span></button>
+      <button class="tur-tab" data-filter="experiencias"><span data-es>Experiencias</span><span data-en>Experiences</span><span data-he>חוויות</span></button>
+    </div>
+
+    <div class="tur-grid" id="turGrid"></div>
+  </div>
+</section>
+
+<script>
+(function(){
+  var ICON_MAP='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M3 6l6-2 6 2 6-2v14l-6 2-6-2-6 2z"/><path d="M9 4v14M15 6v14"/></svg>';
+  var DIRS_ICON='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>';
+  var CLOCK_ICON='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>';
+  var PIN_ICON='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>';
+  var ROUTE_ICON='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="6" cy="19" r="3"/><circle cx="18" cy="5" r="3"/><path d="M9 19h6a3 3 0 003-3V8"/></svg>';
+  var CAL_ICON='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>';
+  var WA_ICON='<svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.2-1.7-.9-2-1-.3-.1-.5-.1-.6.2-.2.3-.7 1-.9 1.1-.2.2-.3.2-.6.1-.3-.2-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6.1-.1.3-.3.4-.5.1-.2.2-.3.3-.5.1-.2 0-.4 0-.5-.1-.2-.6-1.5-.9-2-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3-.2.3-.9.9-.9 2.2 0 1.3.9 2.5 1.1 2.7.1.2 1.8 2.8 4.4 3.9.6.3 1.1.4 1.5.5.6.2 1.2.2 1.6.1.5-.1 1.7-.7 1.9-1.3.2-.7.2-1.2.2-1.3-.1-.2-.3-.2-.6-.4zM12 2a10 10 0 00-8.5 15.3L2 22l4.8-1.5A10 10 0 1012 2z"/></svg>';
+  // Build WhatsApp link with localized message per language
+  function waLink(a,lang){
+    var phone='50766730990';
+    lang=lang||'es';
+    var name=a.name[lang]||a.name.es;
+    var msgs={es:'Hola, deseo más información de este tour: '+name,en:'Hello, I would like more information about this tour: '+name,he:'שלום, אשמח למידע נוסף על הסיור הזה: '+name};
+    return 'https://wa.me/'+phone+'?text='+encodeURIComponent(msgs[lang]||msgs.es);
+  }
+  // On click: rebuild the WhatsApp message including the chosen date
+  window.waBook=function(el){
+    var phone='50766730990';
+    var m=document.body.className.match(/lang-(\w\w)/);var lang=m?m[1]:'es';
+    var card=el.closest('.tur-card');
+    var input=card?card.querySelector('.tur-date-input'):null;
+    var name=input?(input.getAttribute('data-name-'+lang)||input.getAttribute('data-name-es')):'';
+    var date=input&&input.value?input.value:'';
+    var base={es:'Hola, deseo más información de este tour: '+name,en:'Hello, I would like more information about this tour: '+name,he:'שלום, אשמח למידע נוסף על הסיור הזה: '+name};
+    var dateLine={es:'. Fecha deseada: ',en:'. Preferred date: ',he:'. תאריך מבוקש: '};
+    var msg=base[lang]||base.es;
+    if(date){ msg+=dateLine[lang]+date; }
+    el.setAttribute('href','https://wa.me/'+phone+'?text='+encodeURIComponent(msg));
+    return true;
+  };
+
+  var ATTRACTIONS=[
+    {cat:'ciudad',img:'canal',q:'Centro+Visitantes+Miraflores+Panama',loc:{es:'Esclusas de Miraflores, Corregimiento de Ancón, Ciudad de Panamá',en:'Miraflores Locks, Ancón, Panama City',he:'מנעולי מירפלורס, אנקון, פנמה סיטי'},howto:{es:'Desde Eshel toma la Av. Balboa hacia el oeste y sigue hacia Ancón/Miraflores (~20 min en auto o taxi).',en:'From Eshel take Balboa Ave west toward Ancón/Miraflores (~20 min by car or taxi).',he:'מאשל סעו במערב לכיוון אנקון/מירפלורס (~20 דק׳).'},
+      name:{es:'Canal de Panamá',en:'Panama Canal',he:'תעלת פנמה'},
+      d:{es:'La maravilla de ingeniería que une los océanos Atlántico y Pacífico. En el Centro de Visitantes de Miraflores verás de cerca cómo los enormes barcos cruzan las esclusas, con museo, terraza panorámica y película. Ubicado al oeste de la ciudad, hacia Ancón.',en:'The engineering marvel connecting the Atlantic and Pacific oceans. At the Miraflores Visitor Center you can watch huge ships cross the locks up close, with a museum, panoramic terrace and film. Located west of the city, toward Ancón.',he:'פלא ההנדסה המחבר את האוקיינוס האטלנטי והשקט. במרכז המבקרים מירפלורס תראו מקרוב כיצד אוניות ענק חוצות את המנעולים.'},
+      t:{es:'20 min desde Eshel',en:'20 min from Eshel',he:'20 דק׳ מאשל'},badge:{es:'Ciudad',en:'City',he:'עיר'}},
+    {cat:'ciudad',img:'casco-viejo',q:'Casco+Viejo+Panama+City',loc:{es:'Corregimiento de San Felipe, Ciudad de Panamá',en:'San Felipe, Panama City',he:'סן פליפה, פנמה סיטי'},howto:{es:'Desde Eshel baja por la Cinta Costera hacia el oeste hasta San Felipe (~15 min en auto o taxi).',en:'From Eshel follow the Cinta Costera west to San Felipe (~15 min by car or taxi).',he:'מאשל סעו לאורך הרצועה החופית מערבה לסן פליפה (~15 דק׳).'},
+      name:{es:'Casco Viejo',en:'Casco Viejo',he:'קאסקו ויחו'},
+      d:{es:'Patrimonio de la Humanidad UNESCO en el barrio de San Felipe, al borde de la bahía. Calles coloniales empedradas, iglesias históricas, plazas, rooftops, restaurantes boutique y una vista privilegiada del skyline moderno al otro lado del mar.',en:'UNESCO World Heritage Site in the San Felipe neighborhood by the bay. Cobblestone colonial streets, historic churches, plazas, rooftops, boutique restaurants and a privileged view of the modern skyline across the water.',he:'אתר מורשת עולמית בשכונת סן פליפה לחוף המפרץ. רחובות קולוניאליים, כנסיות היסטוריות, מסעדות בוטיק ונוף מיוחד לקו הרקיע המודרני.'},
+      t:{es:'15 min desde Eshel',en:'15 min from Eshel',he:'15 דק׳ מאשל'},badge:{es:'UNESCO',en:'UNESCO',he:'אונסק״ו'}},
+    {cat:'ciudad',img:'cerro-ancon',q:'Cerro+Ancon+Panama+City',loc:{es:'Cerro Ancón, Corregimiento de Ancón, Ciudad de Panamá',en:'Ancón Hill, Panama City',he:'גבעת אנקון, פנמה סיטי'},howto:{es:'Desde Eshel dirígete hacia Ancón; la subida al cerro es en auto o caminata (~20 min).',en:'From Eshel head toward Ancón; the hilltop is reached by car or on foot (~20 min).',he:'מאשל סעו לכיוון אנקון; לפסגה ברכב או ברגל (~20 דק׳).'},
+      name:{es:'Cerro Ancón',en:'Ancón Hill',he:'גבעת אנקון'},
+      d:{es:'El punto más alto de la ciudad, coronado por la bandera panameña. Un mirador con vista 360° del Canal, Casco Viejo y el skyline. El sendero entre naturaleza tropical permite ver perezosos, tucanes y aves exóticas. Junto a Ancón.',en:'The highest point in the city, crowned by the Panamanian flag. A 360° viewpoint over the Canal, Casco Viejo and the skyline. The trail through tropical nature lets you spot sloths, toucans and exotic birds. Next to Ancón.',he:'הנקודה הגבוהה בעיר, מוכתרת בדגל פנמה. תצפית 360° על התעלה וקו הרקיע, עם עצלנים וטוקנים בשביל.'},
+      t:{es:'20 min desde Eshel',en:'20 min from Eshel',he:'20 דק׳ מאשל'},badge:{es:'Mirador',en:'Viewpoint',he:'תצפית'}},
+    {cat:'ciudad',img:'parque-paitilla',q:'Parque+Paitilla+Panama',loc:{es:'Paitilla, Ciudad de Panamá (junto a Eshel)',en:'Paitilla, Panama City (next to Eshel)',he:'פייטיה, פנמה סיטי (ליד אשל)'},howto:{es:'Está en Paitilla, el mismo barrio de Eshel: puedes ir caminando (~5 min).',en:'It\'s in Paitilla, Eshel\'s own neighborhood: you can walk there (~5 min).',he:'בפייטיה, השכונה של אשל: אפשר להגיע ברגל (~5 דק׳).'},
+      name:{es:'Parque Nacho Valdés',en:'Nacho Valdés Park',he:'פארק נאצ׳ו ולדס'},
+      d:{es:'El parque de Paitilla, cruzando la calle desde Eshel, con juegos infantiles coloridos y vista al mar. Áreas para picnic, columpios, zonas de deporte y caminatas frente a la bahía. Ideal para un descanso al aire libre en familia sin alejarse del hotel.',en:'Paitilla\'s park, just across the street from Eshel, with colorful playground and sea views. Picnic areas, swings, sports zones and walking paths by the bay. Ideal for a relaxed family break outdoors close to the hotel.',he:'מרחב ירוק נעים בלב פייטיה, חוצים את הרחוב מאשל. אזורי פיקניק, משחקים לילדים, ספורט והליכה.'},
+      t:{es:'5 min desde Eshel',en:'5 min from Eshel',he:'5 דק׳ מאשל'},badge:{es:'Parque',en:'Park',he:'פארק'}},
+    {cat:'ciudad',img:'cinta-costera',q:'Cinta+Costera+Panama+City',loc:{es:'Avenida Balboa, bahía de Panamá, Ciudad de Panamá',en:'Balboa Avenue, Panama Bay, Panama City',he:'שדרת בלבোא, מפרץ פנמה'},howto:{es:'Eshel está a pocos minutos: toma la Av. Balboa y estás en la Cinta Costera (~12 min).',en:'Eshel is just minutes away via Balboa Ave to the Cinta Costera (~12 min).',he:'אשל במרחק דקות דרך שדרת בלבוא (~12 דק׳).'},
+      name:{es:'Cinta Costera',en:'Cinta Costera',he:'הרצועה החופית'},
+      d:{es:'El paseo marítimo moderno que bordea la bahía a lo largo de la Avenida Balboa. Ciclovías, parques, canchas, gimnasios al aire libre y la mejor vista panorámica del skyline al atardecer. A pocos minutos de Eshel, en pleno corazón de la ciudad.',en:'The modern waterfront promenade lining the bay along Balboa Avenue. Bike paths, parks, courts, outdoor gyms and the best panoramic view of the skyline at sunset. Just minutes from Eshel, in the heart of the city.',he:'הטיילת הימית המודרנית לאורך שדרת בלבוא. שבילי אופניים, פארקים ונוף פנורמי לקו הרקיע בשקיעה.'},
+      t:{es:'12 min desde Eshel',en:'12 min from Eshel',he:'12 דק׳ מאשל'},badge:{es:'Ciudad',en:'City',he:'עיר'}},
+    {cat:'ciudad',img:'museo-ilusiones',q:'Museo+de+Ilusiones+Panama+City',loc:{es:'The Point, Avenida Balboa, Ciudad de Panamá',en:'The Point, Balboa Avenue, Panama City',he:'דה פוינט, שדרת בלבוא, פנמה סיטי'},howto:{es:'The Point está sobre la Av. Balboa, a pocos minutos de Eshel (~10 min en auto o taxi).',en:'The Point is on Balboa Ave, minutes from Eshel (~10 min by car or taxi).',he:'דה פוינט בשדרת בלבוא, דקות מאשל (~10 דק׳).'},
+      name:{es:'Museo de Ilusiones',en:'Museum of Illusions',he:'מוזיאון האשליות'},
+      d:{es:'Más de 80 exhibiciones interactivas que desafían la percepción: salas de espejos infinitos, hologramas y trucos ópticos. Divertidísimo para toda la familia y perfecto para fotos. Ubicado en la torre The Point, sobre la Av. Balboa.',en:'Over 80 interactive exhibits that challenge perception: infinity mirror rooms, holograms and optical illusions. Great fun for the whole family and perfect for photos. Located in The Point tower on Balboa Ave.',he:'מעל 80 תערוכות אינטראקטיביות המאתגרות את התפיסה. מהנה לכל המשפחה ומושלם לתמונות.'},
+      t:{es:'10 min desde Eshel',en:'10 min from Eshel',he:'10 דק׳ מאשל'},badge:{es:'Familia',en:'Family',he:'משפחה'}},
+    {cat:'ciudad',img:'canopy',q:'The+Point+Panama+zipline',loc:{es:'The Point, Avenida Balboa, Ciudad de Panamá',en:'The Point, Balboa Avenue, Panama City',he:'דה פוינט, שדרת בלבוא, פנמה סיטי'},howto:{es:'The Point está sobre la Av. Balboa, a pocos minutos de Eshel (~10 min en auto o taxi).',en:'The Point is on Balboa Ave, minutes from Eshel (~10 min by car or taxi).',he:'דה פוינט בשדרת בלבוא, דקות מאשל (~10 דק׳).'},
+      name:{es:'Zipline Urbano · The Point',en:'Urban Zipline · The Point',he:'זיפליין עירוני · דה פוינט'},
+      d:{es:'Vuela en tirolesa desde lo alto de la torre The Point con el espectacular skyline de la ciudad y la bahía a tus pies. Una experiencia de adrenalina única en pleno corazón de Panamá, con las mejores vistas urbanas del país.',en:'Zipline from the top of The Point tower with the spectacular city skyline and bay beneath your feet. A unique adrenaline experience in the heart of Panama, with the best urban views in the country.',he:'זיפליין מראש מגדל דה פוינט עם קו הרקיע המרהיב והמפרץ למרגלותיכם. חוויית אדרנלין ייחודית בלב פנמה.'},
+      t:{es:'10 min desde Eshel',en:'10 min from Eshel',he:'10 דק׳ מאשל'},badge:{es:'Aventura',en:'Adventure',he:'הרפתקה'}},
+    {cat:'ciudad',img:'bus-turistico',q:'City+Sightseeing+Panama+hop+on+hop+off',loc:{es:'Salidas desde Multiplaza / Cinta Costera, Ciudad de Panamá',en:'Departures from Multiplaza / Cinta Costera, Panama City',he:'יציאות ממולטיפלזה / הרצועה החופית'},howto:{es:'Las paradas principales están en Multiplaza y la Cinta Costera, a minutos de Eshel.',en:'Main stops are at Multiplaza and the Cinta Costera, minutes from Eshel.',he:'התחנות הראשיות במולטיפלזה וברצועה החופית, דקות מאשל.'},
+      name:{es:'Bus Turístico',en:'Sightseeing Bus',he:'אוטובוס תיירים'},
+      d:{es:'Recorre la ciudad en el bus panorámico de dos pisos (hop-on hop-off). Sube y baja en los puntos icónicos —skyline, Cinta Costera, Casco Viejo, Calzada de Amador— a tu propio ritmo, con audioguía. Ideal para un primer día de orientación.',en:'Tour the city on the double-decker panoramic bus (hop-on hop-off). Get on and off at iconic spots —skyline, Cinta Costera, Casco Viejo, Amador Causeway— at your own pace, with audio guide. Ideal for a first orientation day.',he:'סיור בעיר באוטובוס הפנורמי הדו-קומתי. עלייה וירידה בנקודות האיקוניות בקצב שלכם, עם מדריך קולי.'},
+      t:{es:'Salidas en la ciudad',en:'Departures in the city',he:'יציאות בעיר'},badge:{es:'Ciudad',en:'City',he:'עיר'}},
+    {cat:'ciudad',img:'biomuseo',q:'Biomuseo+Panama+Amador',loc:{es:'Calzada de Amador, entrada del Canal, Ciudad de Panamá',en:'Amador Causeway, Panama City',he:'גדת אמאדור, פנמה סיטי'},howto:{es:'Desde Eshel toma la Av. Balboa hacia la Calzada de Amador (~18 min en auto o taxi).',en:'From Eshel take Balboa Ave to the Amador Causeway (~18 min by car or taxi).',he:'מאשל סעו לגדת אמאדור (~18 דק׳).'},
+      name:{es:'Biomuseo',en:'Biomuseum',he:'ביומוזיאון'},
+      d:{es:'El espectacular museo de la biodiversidad diseñado por Frank Gehry, en la Calzada de Amador. Su arquitectura multicolor cuenta cómo el istmo de Panamá surgió del mar y cambió el planeta. Galerías inmersivas y jardín de especies nativas frente al mar.',en:'The spectacular biodiversity museum designed by Frank Gehry on the Amador Causeway. Its multicolored architecture tells how the isthmus of Panama rose from the sea and changed the planet. Immersive galleries and a native-species garden by the sea.',he:'מוזיאון המגוון הביולוגי המרהיב בתכנון פרנק גרי, על גדת אמאדור. אדריכלות צבעונית המספרת כיצד מיצר פנמה שינה את העולם.'},
+      t:{es:'18 min desde Eshel',en:'18 min from Eshel',he:'18 דק׳ מאשל'},badge:{es:'Arquitectura',en:'Architecture',he:'אדריכלות'}},
+    {cat:'ciudad',img:'museo-mola',q:'Museo+de+la+Mola+Casco+Viejo+Panama',loc:{es:'Casco Viejo, San Felipe, Ciudad de Panamá',en:'Casco Viejo, San Felipe, Panama City',he:'קאסקו ויחו, סן פליפה, פנמה סיטי'},howto:{es:'En Casco Viejo, a ~15 min de Eshel por la Cinta Costera hacia San Felipe.',en:'In Casco Viejo, ~15 min from Eshel via the Cinta Costera toward San Felipe.',he:'בקאסקו ויחו, ~15 דק׳ מאשל.'},
+      name:{es:'Museo de la Mola',en:'Mola Museum',he:'מוזיאון המולה'},
+      d:{es:'Dedicado a la mola, el arte textil tradicional del pueblo Guna. Exhibiciones que recorren la historia, técnicas y significado de estos coloridos tejidos hechos a mano, considerados patrimonio cultural de Panamá. En pleno Casco Viejo.',en:'Dedicated to the mola, the traditional textile art of the Guna people. Exhibits trace the history, techniques and meaning of these colorful handmade textiles, considered Panamanian cultural heritage. In the heart of Casco Viejo.',he:'מוקדש למולה, אמנות הטקסטיל המסורתית של בני הגונה. תערוכות על ההיסטוריה והטכניקות של האריגים הצבעוניים. בלב קאסקו ויחו.'},
+      t:{es:'15 min desde Eshel',en:'15 min from Eshel',he:'15 דק׳ מאשל'},badge:{es:'Cultura',en:'Culture',he:'תרבות'}},
+    {cat:'playas',img:'taboga',q:'Isla+Taboga+ferry+Amador+Panama',loc:{es:'Isla Taboga, golfo de Panamá (ferry desde Amador)',en:'Taboga Island, Gulf of Panama (ferry from Amador)',he:'אי טבוגה, מפרץ פנמה'},howto:{es:'Desde Eshel ve a la Calzada de Amador (~18 min) y toma el ferry a Taboga (~30 min).',en:'From Eshel go to the Amador Causeway (~18 min) and take the ferry to Taboga (~30 min).',he:'מאשל לגדת אמאדור (~18 דק׳) ומשם מעבורת לטבוגה (~30 דק׳).'},
+      name:{es:'Isla Taboga',en:'Taboga Island',he:'אי טבוגה'},
+      d:{es:'La "Isla de las Flores", a solo 30 minutos en ferry desde la Calzada de Amador. Playas tranquilas en el Pacífico, un pueblo colonial pintoresco de calles estrechas y el sabor auténtico de Panamá. Perfecta para una escapada de un día.',en:'The "Island of Flowers," just 30 minutes by ferry from the Amador Causeway. Peaceful Pacific beaches, a charming colonial village of narrow streets and authentic Panamanian flavor. Perfect for a day trip.',he:'"אי הפרחים", 30 דקות במעבורת מגדת אמאדור. חופים שקטים בפסיפיק וכפר קולוניאלי ציורי.'},
+      t:{es:'30 min en ferry (+ traslado)',en:'30 min ferry (+ transfer)',he:'30 דק׳ במעבורת'},badge:{es:'Isla',en:'Island',he:'אי'}},
+    {cat:'playas',img:'san-blas',q:'San+Blas+Guna+Yala+Panama',loc:{es:'Comarca Guna Yala, costa Caribe (noreste de Panamá)',en:'Guna Yala region, Caribbean coast (northeast Panama)',he:'גונה יאלה, החוף הקריבי'},howto:{es:'Se recomienda tour con transporte 4x4 + lancha desde la ciudad (2.5–3 h). Te ayudamos a coordinarlo.',en:'A guided tour with 4x4 + boat from the city is recommended (2.5–3 h). We can help arrange it.',he:'מומלץ סיור מודרך עם 4x4 + סירה מהעיר (2.5–3 שעות). נשמח לסייע.'},
+      name:{es:'San Blas / Guna Yala',en:'San Blas / Guna Yala',he:'סן בלאס / גונה יאלה'},
+      d:{es:'365 islas de aguas turquesas y arena blanca en la comarca indígena Guna Yala, en el Caribe panameño. Cultura Guna viva, cabañas sobre el mar y snorkel en arrecifes. Una de las experiencias más mágicas del país. Se llega en 4x4 + lancha o vuelo.',en:'365 islands of turquoise water and white sand in the indigenous Guna Yala region, on Panama\'s Caribbean. Living Guna culture, overwater cabins and reef snorkeling. One of the country\'s most magical experiences. Reached by 4x4 + boat or flight.',he:'365 איים של מים טורקיזיים וחול לבן בחבל גונה יאלה הקריבי. תרבות גונה חיה ושנורקל בשוניות.'},
+      t:{es:'2.5–3 h en 4x4 + lancha',en:'2.5–3 h by 4x4 + boat',he:'2.5–3 שעות'},badge:{es:'Paraíso',en:'Paradise',he:'גן עדן'}},
+    {cat:'playas',img:'bocas',q:'Bocas+del+Toro+Panama',loc:{es:'Archipiélago de Bocas del Toro, Caribe occidental',en:'Bocas del Toro archipelago, western Caribbean',he:'ארכיפלג בוקאס דל טורו'},howto:{es:'Lo más cómodo es un vuelo de ~1 h desde el aeropuerto de la ciudad. Te ayudamos a organizarlo.',en:'The easiest way is a ~1 h flight from the city airport. We can help organize it.',he:'הדרך הנוחה היא טיסה של ~שעה משדה התעופה. נשמח לסייע.'},
+      name:{es:'Bocas del Toro',en:'Bocas del Toro',he:'בוקאס דל טורו'},
+      d:{es:'Archipiélago caribeño en el noroeste del país, famoso por su ambiente vibrante y relajado. Surf, snorkel, manglares, ranas venenosas de colores y delfines en aguas cristalinas. Se llega cómodamente en vuelo de 1 hora desde la ciudad.',en:'Caribbean archipelago in the country\'s northwest, famous for its vibrant, laid-back vibe. Surfing, snorkeling, mangroves, colorful poison dart frogs and dolphins in crystal waters. Easily reached by a 1-hour flight from the city.',he:'ארכיפלג קריבי בצפון-מערב המדינה, מפורסם באווירה התוססת. גלישה, שנורקל ודולפינים. טיסה של שעה.'},
+      t:{es:'1 h en avión',en:'1 h by plane',he:'שעה בטיסה'},badge:{es:'Caribe',en:'Caribbean',he:'קריביים'}},
+    {cat:'naturaleza',img:'embera',q:'Embera+Quera+Chagres+Panama',loc:{es:'Comunidad Emberá, río Chagres, Parque Nacional Chagres',en:'Emberá community, Chagres River, Chagres National Park',he:'קהילת אמברה, נהר צ׳אגרס'},howto:{es:'Tour con traslado a Chagres + piragua por el río (~1.5 h en total). Te ayudamos a reservarlo.',en:'Tour with transfer to Chagres + river canoe (~1.5 h total). We can help you book it.',he:'סיור עם הסעה לצ׳אגרס + סירה בנהר (~1.5 שעות). נשמח לעזור בהזמנה.'},
+      name:{es:'Comunidad Emberá',en:'Emberá Community',he:'קהילת אמברה'},
+      d:{es:'Visita una auténtica comunidad indígena Emberá en la selva del Parque Nacional Chagres. Se llega navegando en piragua por el río Chagres. Artesanías, pinturas corporales de jagua, danzas ancestrales y almuerzo típico. Experiencia cultural inolvidable.',en:'Visit an authentic Emberá indigenous community in the Chagres National Park jungle. Reached by dugout canoe along the Chagres River. Crafts, jagua body painting, ancestral dances and a typical lunch. An unforgettable cultural experience.',he:'ביקור בקהילת אמברה ילידית אותנטית בג׳ונגל פארק צ׳אגרס. הגעה בסירת פירוגה בנהר צ׳אגרס.'},
+      t:{es:'1.5 h (incl. piragua)',en:'1.5 h (incl. canoe)',he:'1.5 שעות'},badge:{es:'Cultura indígena',en:'Indigenous',he:'תרבות ילידית'}},
+    {cat:'experiencias',img:'exp-atv',q:'',loc:{es:'Excursión guiada · salida coordinada desde Eshel',en:'Guided tour · pickup arranged from Eshel',he:'סיור מודרך · איסוף מאשל'},howto:{es:'Coordinamos transporte y guía desde Eshel. Escríbenos para fecha y disponibilidad.',en:'We arrange transport and guide from Eshel. Message us for dates and availability.',he:'נתאם הסעה ומדריך מאשל. כתבו לנו לתאריכים וזמינות.'},
+      name:{es:'Aventura en ATV',en:'ATV Adventure',he:'הרפתקת ATV'},
+      d:{es:'Recorre senderos, ríos y naturaleza panameña a bordo de un ATV (cuatrimoto). Adrenalina y paisajes espectaculares con guías expertos. Apto para principiantes y aventureros. Reserva tu salida con nosotros.',en:'Ride trails, rivers and Panamanian nature on an ATV (quad bike). Adrenaline and spectacular scenery with expert guides. Suitable for beginners and adventurers. Book your outing with us.',he:'רכבו בשבילים, נהרות וטבע פנמי על ATV. אדרנלין ונופים מרהיבים עם מדריכים מומחים. הזמינו אצלנו.'},
+      t:{es:'Reserva por WhatsApp',en:'Book via WhatsApp',he:'הזמנה בוואטסאפ'},badge:{es:'Aventura',en:'Adventure',he:'הרפתקה'}},
+    {cat:'experiencias',img:'exp-rafting',q:'',loc:{es:'Ríos de Chiriquí / Panamá · excursión guiada',en:'Chiriquí / Panama rivers · guided tour',he:'נהרות צ׳יריקי / פנמה · סיור מודרך'},howto:{es:'Organizamos transporte, equipo y guía certificado. Consúltanos fechas y niveles.',en:'We organize transport, gear and certified guide. Ask us about dates and levels.',he:'נארגן הסעה, ציוד ומדריך מוסמך. שאלו אותנו לתאריכים ורמות.'},
+      name:{es:'Water Rafting',en:'White-Water Rafting',he:'רפטינג'},
+      d:{es:'Desciende los rápidos de los ríos panameños en una experiencia llena de adrenalina y naturaleza. Con equipo de seguridad y guías certificados, hay rutas para todos los niveles. Te ayudamos a reservar el tour.',en:'Descend the rapids of Panama rivers in an experience full of adrenaline and nature. With safety gear and certified guides, there are routes for all levels. We help you book the tour.',he:'גלשו בנהרות פנמה בחוויה מלאת אדרנלין. עם ציוד בטיחות ומדריכים מוסמכים, מסלולים לכל הרמות. נעזור בהזמנה.'},
+      t:{es:'Reserva por WhatsApp',en:'Book via WhatsApp',he:'הזמנה בוואטסאפ'},badge:{es:'Aventura',en:'Adventure',he:'הרפתקה'}},
+    {cat:'experiencias',img:'exp-caballos',q:'',loc:{es:'Playa o campo · excursión coordinada desde Eshel',en:'Beach or countryside · arranged from Eshel',he:'חוף או כפר · מתואם מאשל'},howto:{es:'Coordinamos el paseo y el traslado desde Eshel. Escríbenos para reservar.',en:'We arrange the ride and transfer from Eshel. Message us to book.',he:'נתאם את הרכיבה וההסעה מאשל. כתבו לנו להזמנה.'},
+      name:{es:'Cabalgatas',en:'Horseback Riding',he:'רכיבה על סוסים'},
+      d:{es:'Disfruta un paseo a caballo por la playa o el campo panameño, una experiencia tranquila y memorable para todas las edades. Ideal al atardecer. Te ayudamos a coordinar el paseo.',en:'Enjoy a horseback ride along the beach or Panamanian countryside, a peaceful and memorable experience for all ages. Ideal at sunset. We help you arrange the ride.',he:'טיול רכיבה על סוסים בחוף או בכפר הפנמי, חוויה רגועה לכל הגילאים. אידיאלי בשקיעה. נעזור בתיאום.'},
+      t:{es:'Reserva por WhatsApp',en:'Book via WhatsApp',he:'הזמנה בוואטסאפ'},badge:{es:'Naturaleza',en:'Nature',he:'טבע'}},
+    {cat:'experiencias',img:'exp-botes',q:'',loc:{es:'Bahía de Panamá / islas · salida coordinada',en:'Panama Bay / islands · arranged departure',he:'מפרץ פנמה / איים · יציאה מתואמת'},howto:{es:'Organizamos el alquiler de bote o tour con capitán. Consúltanos opciones y horarios.',en:'We organize boat rental or tour with captain. Ask us about options and times.',he:'נארגן השכרת סירה או סיור עם רב חובל. שאלו לאפשרויות וזמנים.'},
+      name:{es:'Paseo en Bote',en:'Boat Tour',he:'שייט בסירה'},
+      d:{es:'Navega por la bahía de Panamá o hacia las islas cercanas en un bote privado o compartido. Perfecto para disfrutar el mar, pescar o simplemente relajarte. Te ayudamos a reservar con capitán incluido.',en:'Sail Panama Bay or to nearby islands on a private or shared boat. Perfect to enjoy the sea, fish or simply relax. We help you book with a captain included.',he:'הפליגו במפרץ פנמה או לאיים הקרובים בסירה פרטית או משותפת. מושלם לים, דיג או רגיעה. נעזור בהזמנה עם רב חובל.'},
+      t:{es:'Reserva por WhatsApp',en:'Book via WhatsApp',he:'הזמנה בוואטסאפ'},badge:{es:'Mar',en:'Sea',he:'ים'}},
+    {cat:'experiencias',img:'exp-tour-ciudad',q:'',loc:{es:'Salida desde Eshel Suites, Paitilla',en:'Departure from Eshel Suites, Paitilla',he:'יציאה מאשל סוויטס, פייטיה'},howto:{es:'Diseñamos el recorrido por la ciudad con guía y transporte. Escríbenos tus intereses.',en:'We design the city tour with guide and transport. Tell us your interests.',he:'נתכנן את סיור העיר עם מדריך והסעה. ספרו לנו על תחומי העניין.'},
+      name:{es:'Tour por la Ciudad',en:'City Tour',he:'סיור בעיר'},
+      d:{es:'Un recorrido guiado por lo mejor de Ciudad de Panamá: el Canal, Casco Viejo, la Cinta Costera, miradores y más, adaptado a tus intereses. Con guía y transporte privado. Reserva tu tour con nosotros.',en:'A guided tour of the best of Panama City: the Canal, Casco Viejo, the Cinta Costera, viewpoints and more, tailored to your interests. With guide and private transport. Book your tour with us.',he:'סיור מודרך במיטב פנמה סיטי: התעלה, קאסקו ויחו, הרצועה החופית ועוד, מותאם לתחומי העניין שלך. עם מדריך והסעה פרטית. הזמינו אצלנו.'},
+      t:{es:'Reserva por WhatsApp',en:'Book via WhatsApp',he:'הזמנה בוואטסאפ'},badge:{es:'Tour',en:'Tour',he:'סיור'}},
+    {cat:'experiencias',img:'exp-tour-playas',q:'',loc:{es:'Salida coordinada desde Eshel Suites',en:'Departure arranged from Eshel Suites',he:'יציאה מתואמת מאשל סוויטס'},howto:{es:'Coordinamos el tour a las mejores playas e islas con transporte. Consúltanos destinos.',en:'We arrange the tour to the best beaches and islands with transport. Ask us about destinations.',he:'נתאם את הסיור לחופים ולאיים הטובים ביותר עם הסעה. שאלו על יעדים.'},
+      name:{es:'Tour a Playas',en:'Beach Tour',he:'סיור חופים'},
+      d:{es:'Escápate a las playas e islas más bonitas de Panamá —Taboga, San Blas, el Pacífico— en un tour coordinado con transporte y todo listo. Ideal para un día de sol y mar. Te ayudamos a organizarlo.',en:'Escape to Panama most beautiful beaches and islands —Taboga, San Blas, the Pacific— on a coordinated tour with transport and everything ready. Ideal for a day of sun and sea. We help you organize it.',he:'ברחו לחופים ולאיים היפים בפנמה —טבוגה, סן בלאס, הפסיפיק— בסיור מתואם עם הסעה. אידיאלי ליום של שמש וים. נעזור בארגון.'},
+      t:{es:'Reserva por WhatsApp',en:'Book via WhatsApp',he:'הזמנה בוואטסאפ'},badge:{es:'Playas',en:'Beaches',he:'חופים'}}
+  ];
+
+  function span(o){return '<span data-es>'+o.es+'</span><span data-en>'+o.en+'</span><span data-he>'+o.he+'</span>';}
+  function spanI(o){return '<span class="inline" data-es>'+o.es+'</span><span class="inline" data-en>'+o.en+'</span><span class="inline" data-he>'+o.he+'</span>';}
+
+  var grid=document.getElementById('turGrid');
+  if(grid){
+    grid.innerHTML=ATTRACTIONS.map(function(a){
+      return '<div class="tur-card reveal" data-cat="'+a.cat+'">'+
+        '<div class="tur-card-img">'+
+          '<img src="assets/turismo/'+a.img+'.webp" alt="'+a.name.es+'" loading="lazy" onerror="this.parentNode.innerHTML=\'<div class=&quot;tur-ph&quot;>'+ICON_MAP.replace(/"/g,'&quot;')+'</div>\'">'+
+          '<span class="tur-badge">'+spanI(a.badge)+'</span>'+
+        '</div>'+
+        '<div class="tur-card-body">'+
+          '<h4>'+span(a.name)+'</h4>'+
+          '<p>'+span(a.d)+'</p>'+
+          '<div class="tur-loc">'+PIN_ICON+spanI(a.loc)+'</div>'+
+          '<div class="tur-howto"><div class="tur-howto-label">'+ROUTE_ICON+'<span class="inline" data-es>Cómo llegar desde Eshel</span><span class="inline" data-en>How to get there from Eshel</span><span class="inline" data-he>איך להגיע מאשל</span></div><p class="tur-howto-text">'+span(a.howto)+'</p></div>'+
+          '<div class="tur-date">'+CAL_ICON+'<label class="inline" data-es>Fecha deseada</label><label class="inline" data-en>Preferred date</label><label class="inline" data-he>תאריך מבוקש</label><input type="date" class="tur-date-input" data-name-es="'+a.name.es+'" data-name-en="'+a.name.en+'" data-name-he="'+a.name.he+'"></div>'+
+          '<div class="tur-card-foot">'+
+            '<span class="tur-dist">'+CLOCK_ICON+spanI(a.t)+'</span>'+
+            '<a class="tur-wa" href="'+waLink(a,'es')+'" data-wa-es="'+waLink(a,'es')+'" data-wa-en="'+waLink(a,'en')+'" data-wa-he="'+waLink(a,'he')+'" onclick="return waBook(this)" target="_blank" rel="noopener">'+WA_ICON+'<span class="inline" data-es>Reservar tour</span><span class="inline" data-en>Book a tour</span><span class="inline" data-he>הזמנת סיור</span></a>'+
+          '</div>'+
+        '</div>'+
+      '</div>';
+    }).join('');
+
+    // re-apply language visibility if a global setter exists
+    if(window.applyLang){window.applyLang();}
+    // sync WhatsApp links to current language
+    (function(){var m=document.body.className.match(/lang-(\w\w)/);var l=m?m[1]:'es';document.querySelectorAll('.tur-wa').forEach(function(a){var u=a.getAttribute('data-wa-'+l);if(u)a.setAttribute('href',u);});})();
+
+    var tabs=document.querySelectorAll('.tur-tab');
+    var cards=grid.querySelectorAll('.tur-card');
+    tabs.forEach(function(tab){
+      tab.addEventListener('click',function(){
+        tabs.forEach(function(t){t.classList.remove('active');});
+        tab.classList.add('active');
+        var f=tab.getAttribute('data-filter');
+        cards.forEach(function(c){
+          c.style.display=(f==='all'||c.getAttribute('data-cat')===f)?'':'none';
+        });
+      });
+    });
+  }
+})();
+</script>
+
+
+<!-- KOSHER DIRECTORY -->
+<style>
+.kosher-sec{background:var(--bone)}
+.kfilters{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin-bottom:34px}
+.kfilters button{font-family:var(--sans);background:var(--cream);border:1px solid var(--line);color:var(--navy);padding:9px 18px;border-radius:999px;cursor:pointer;font-size:.8rem;letter-spacing:.03em;transition:.25s}
+.kfilters button:hover{border-color:var(--gold)}
+.kfilters button.active{background:var(--navy);color:var(--cream);border-color:var(--navy)}
+.kgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:16px}
+.kitem{background:var(--cream);border:1px solid var(--line);border-radius:10px;padding:18px 18px 14px;display:flex;flex-direction:column;gap:8px;transition:.3s}
+.kitem:hover{border-color:var(--gold);transform:translateY(-3px);box-shadow:0 14px 30px -18px rgba(28,28,28,.4)}
+.kitem-top{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.kitem h4{font-size:1.2rem;line-height:1.1;font-weight:600}
+.kitem-logo{width:44px;height:44px;object-fit:contain;border-radius:6px;border:1px solid rgba(28,28,28,.08);background:var(--bone);padding:3px;margin-bottom:4px}
+.kitem-logo-placeholder{width:44px;height:44px;border-radius:6px;background:var(--bone);display:flex;align-items:center;justify-content:center;font-family:var(--serif);font-size:1.1rem;color:var(--gold-2);font-weight:600;border:1px solid rgba(201,162,75,.2);margin-bottom:4px}
+.kitem-wa{display:inline-flex;align-items:center;gap:5px;font-size:.72rem;font-weight:600;color:var(--navy);border:1px solid rgba(28,28,28,.15);border-radius:20px;padding:5px 11px;margin-top:4px;transition:.2s;width:fit-content}
+.kitem-wa:hover{background:var(--navy);color:#fff;border-color:var(--navy)}
+.kitem-wa svg{width:13px;height:13px}
+.kdot{font-size:.7rem;font-family:var(--sans);font-weight:500;padding:3px 9px;border-radius:999px;white-space:nowrap;letter-spacing:.03em}
+.kdot.meat{background:#f3e3df;color:#9a4634}
+.kdot.dairy{background:#dfeaf3;color:#2f5e86}
+.kdot.parve{background:#e2efe2;color:#2f6b3a}
+.kdot.super{background:#f3eede;color:#8a6d1f}
+.kitem .zone{font-family:var(--sans);font-size:.8rem;color:var(--muted);display:flex;align-items:center;gap:5px}
+.kitem .ktag{font-family:var(--sans);font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:var(--gold-2);font-weight:500}
+.kitem a{font-family:var(--sans);font-size:.76rem;color:var(--navy);margin-top:4px;display:inline-flex;align-items:center;gap:5px;transition:.25s;font-weight:500}
+.kitem a:hover{color:var(--gold-2);gap:9px}
+.kdisclaimer{margin-top:30px;background:var(--cream);border:1px dashed var(--gold);border-radius:8px;padding:18px 22px;font-size:.84rem;color:var(--muted);text-align:center}
+.kdisclaimer a{color:var(--gold-2);text-decoration:underline}
+.legend{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-bottom:24px;font-family:var(--sans);font-size:.78rem;color:var(--muted)}
+.legend span{display:inline-flex;align-items:center;gap:6px}
+.legend i{width:11px;height:11px;border-radius:50%;display:inline-block}
+</style>
+<section class="section kosher-sec" id="kosher">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow"><span data-es>Comer kosher en Panamá</span><span data-en>Kosher dining in Panama</span><span data-he>אוכל כשר בפנמה</span></div>
+      <h2><span data-es>Directorio kosher</span><span data-en>Kosher directory</span><span data-he>מדריך כשרות</span></h2>
+      <div class="gold-rule"></div>
+      <p><span data-es>Una guía de referencia de establecimientos certificados por Shevet Ahim. Toca cualquiera para ver su ficha oficial, siempre actualizada.</span><span data-en>A reference guide to establishments certified by Shevet Ahim. Tap any to see its official, always-updated listing.</span><span data-he>מדריך עזר למוסדות המאושרים על ידי שבט אחים. הקישו על כל אחד לצפייה בדף הרשמי.</span></p>
+    </div>
+    <div class="legend reveal">
+      <span><i style="background:#9a4634"></i><span data-es>Carne</span><span data-en>Meat</span><span data-he>בשרי</span></span>
+      <span><i style="background:#2f5e86"></i><span data-es>Lácteo</span><span data-en>Dairy</span><span data-he>חלבי</span></span>
+      <span><i style="background:#2f6b3a"></i><span data-es>Parve</span><span data-en>Parve</span><span data-he>פרווה</span></span>
+      <span><i style="background:#8a6d1f"></i><span data-es>Supermercado</span><span data-en>Supermarket</span><span data-he>סופרמרקט</span></span>
+    </div>
+    <div class="kfilters reveal" id="kfilters">
+      <button class="active" data-f="all"><span data-es>Todos</span><span data-en>All</span><span data-he>הכל</span></button>
+      <button data-f="Paitilla">Paitilla</button>
+      <button data-f="meat"><span data-es>Carne</span><span data-en>Meat</span><span data-he>בשרי</span></button>
+      <button data-f="dairy"><span data-es>Lácteo</span><span data-en>Dairy</span><span data-he>חלבי</span></button>
+      <button data-f="parve">Parve</button>
+      <button data-f="super"><span data-es>Súper</span><span data-en>Super</span><span data-he>סופר</span></button>
+    </div>
+    <div class="kgrid reveal" id="kgrid"></div>
+    <div class="kdisclaimer reveal">
+      <span data-es>Listado de referencia (act. jun 2026). El estatus kosher puede cambiar y en los supermercados debe revisarse el sello de cada producto. Confirma siempre en </span>
+      <span data-en>Reference list (updated Jun 2026). Kosher status may change, and in supermarkets each product's seal must be checked. Always confirm at </span>
+      <span data-he>רשימת עזר (עודכן יוני 2026). מצב הכשרות עשוי להשתנות. אמתו תמיד ב</span>
+      <a href="https://kosher.com.pa/establecimientos-certificados/" target="_blank" rel="noopener">kosher.com.pa</a>.
+    </div>
+  </div>
+</section>
+
+<!-- EXTRAS -->
+<style>
+.extras{background:linear-gradient(180deg,var(--bone-2),var(--bone))}
+.xgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+@media(max-width:820px){.xgrid{grid-template-columns:1fr}}
+.xcard{background:var(--cream);border-radius:10px;padding:32px 28px;box-shadow:0 10px 30px -20px rgba(28,28,28,.4);border-top:3px solid var(--gold);display:flex;flex-direction:column}
+.xcard h3{font-size:1.4rem;margin-bottom:6px}
+.xcard ul{list-style:none;margin:14px 0 22px;display:grid;gap:9px;flex:1}
+.xcard li{display:flex;align-items:flex-start;gap:9px;font-size:.92rem;color:var(--muted)}
+.xcard li svg{width:17px;height:17px;color:var(--gold-2);flex-shrink:0;margin-top:4px}
+.wa-btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;padding:13px 22px;border-radius:999px;background:var(--navy);color:var(--bone);font-family:var(--sans);font-size:.83rem;font-weight:500;letter-spacing:.03em;transition:.3s;margin-top:auto}
+.wa-btn:hover{background:#16301f;transform:translateY(-2px)}
+.wa-btn svg{width:18px;height:18px}
+</style>
+<section class="section extras" id="extras">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow"><span data-es>Servicios &amp; solicitudes</span><span data-en>Services &amp; requests</span><span data-he>שירותים ובקשות</span></div>
+      <h2><span data-es>¿Necesitas algo más?</span><span data-en>Need anything else?</span><span data-he>צריכים עוד משהו?</span></h2>
+      <div class="gold-rule"></div>
+      <p><span data-es>Lo coordinamos por WhatsApp, de forma rápida y personal.</span><span data-en>We coordinate it via WhatsApp, quickly and personally.</span><span data-he>אנו מתאמים זאת בוואטסאפ, במהירות ובאופן אישי.</span></p>
+    </div>
+    <div class="xgrid reveal">
+      <div class="xcard">
+        <h3><span data-es>En tu suite</span><span data-en>In your suite</span><span data-he>בסוויטה</span></h3>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 20v-8h14v8M3 12h18M7 12V8a2 2 0 012-2h6a2 2 0 012 2v4"/></svg><span data-es><b>Cuna / play</b> — sin costo, previa solicitud</span><span data-en><b>Crib / play</b> — free, on request</span><span data-he><b>עריסה</b> — ללא עלות, מראש</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 18v-6h18v6M6 12V9a2 2 0 012-2h8a2 2 0 012 2v3"/></svg><span data-es><b>Cama adicional twin</b> — sin costo, previa solicitud*</span><span data-en><b>Extra twin bed</b> — free, on request*</span><span data-he><b>מיטה נוספת</b> — ללא עלות*</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 7h16M4 12h16M4 17h10"/></svg><span data-es>Toallas o almohadas extra</span><span data-en>Extra towels or pillows</span><span data-he>מגבות או כריות נוספות</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><circle cx="12" cy="12" r="9"/><path d="M12 8v4l3 2"/></svg><span data-es>Limpieza adicional</span><span data-en>Additional cleaning</span><span data-he>ניקיון נוסף</span></li>
+        </ul>
+        <a class="wa-btn" target="_blank" rel="noopener" href="#" data-wa="Hola Eshel Suites, me hospedaré con ustedes y quisiera solicitar para mi suite: "><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.5 15.2L2 22l4.9-1.3A10 10 0 1012 2zm0 18a8 8 0 01-4.1-1.1l-.3-.2-2.9.8.8-2.8-.2-.3A8 8 0 1112 20zm4.4-6c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1l-.7.9c-.1.2-.3.2-.5.1a6.5 6.5 0 01-3.2-2.8c-.1-.2 0-.4.1-.5l.4-.5.2-.4v-.4l-.7-1.7c-.2-.5-.4-.4-.5-.4h-.5a1 1 0 00-.7.3c-.3.3-.9.9-.9 2.1s.9 2.4 1 2.6c.1.2 1.8 2.8 4.4 3.9 1.6.7 2.2.7 3 .6.5-.1 1.4-.6 1.6-1.1.2-.6.2-1 .1-1.1l-.4-.2z"/></svg><span data-es>Solicitar por WhatsApp</span><span data-en>Request via WhatsApp</span><span data-he>בקשה בוואטסאפ</span></a>
+      </div>
+      <div class="xcard">
+        <h3><span data-es>Traslados &amp; turismo</span><span data-en>Transfers &amp; tours</span><span data-he>הסעות וטיולים</span></h3>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 16l2-6h14l2 6M5 16v3M19 16v3M2 16h20"/><circle cx="7.5" cy="16" r="1.5"/><circle cx="16.5" cy="16" r="1.5"/></svg><span data-es>Traslado desde/hacia el aeropuerto</span><span data-en>Airport transfers</span><span data-he>הסעות לשדה התעופה</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2v20M2 12h20"/><circle cx="12" cy="12" r="9"/></svg><span data-es>Tours: Canal, Casco Viejo, islas y más</span><span data-en>Tours: Canal, Old Town, islands &amp; more</span><span data-he>טיולים: תעלה, העיר העתיקה ואיים</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 11l1.5-4.5A2 2 0 018.4 5h7.2a2 2 0 011.9 1.5L19 11M5 11h14v6H5zM7 17v2M17 17v2"/></svg><span data-es>Transporte privado con chofer</span><span data-en>Private transport with driver</span><span data-he>הסעה פרטית עם נהג</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="6" width="18" height="12" rx="2"/><path d="M3 10h18"/></svg><span data-es>Gestión de parqueo privado</span><span data-en>Private parking arrangement</span><span data-he>חניה פרטית</span></li>
+        </ul>
+        <a class="wa-btn" target="_blank" rel="noopener" href="#" data-wa="Hola Eshel Suites, quisiera información sobre traslados / tours: "><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.5 15.2L2 22l4.9-1.3A10 10 0 1012 2zm0 18a8 8 0 01-4.1-1.1l-.3-.2-2.9.8.8-2.8-.2-.3A8 8 0 1112 20zm4.4-6c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1l-.7.9c-.1.2-.3.2-.5.1a6.5 6.5 0 01-3.2-2.8c-.1-.2 0-.4.1-.5l.4-.5.2-.4v-.4l-.7-1.7c-.2-.5-.4-.4-.5-.4h-.5a1 1 0 00-.7.3c-.3.3-.9.9-.9 2.1s.9 2.4 1 2.6c.1.2 1.8 2.8 4.4 3.9 1.6.7 2.2.7 3 .6.5-.1 1.4-.6 1.6-1.1.2-.6.2-1 .1-1.1l-.4-.2z"/></svg><span data-es>Solicitar por WhatsApp</span><span data-en>Request via WhatsApp</span><span data-he>בקשה בוואטסאפ</span></a>
+      </div>
+      <div class="xcard">
+        <h3><span data-es>Kosher &amp; comidas</span><span data-en>Kosher &amp; meals</span><span data-he>כשרות וארוחות</span></h3>
+        <ul>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M6 3v18M6 8h6a3 3 0 010 6H6M18 3v18"/></svg><span data-es>Coordinación de comidas con Beth El o Chabad</span><span data-en>Meal coordination with Beth El or Chabad</span><span data-he>תיאום ארוחות עם בית אל או חב״ד</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 4h16v4H4zM6 8v12h12V8"/></svg><span data-es>Compras kosher listas a tu llegada</span><span data-en>Kosher groceries ready on arrival</span><span data-he>קניות כשרות מוכנות בהגעה</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 4h14v8a7 7 0 01-14 0z"/><path d="M3 20h18"/></svg><span data-es>Artículos de Shabat gratis en el coworking</span><span data-en>Free Shabbat items in the coworking</span><span data-he>פריטי שבת חינם</span></li>
+        </ul>
+        <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:auto">
+          <a class="wa-btn" style="flex:1;background:var(--navy)" target="_blank" rel="noopener" href="https://form.jotform.com/233552983871063"><span data-es>Comidas Beth El</span><span data-en>Beth El meals</span><span data-he>ארוחות בית אל</span></a>
+          <a class="wa-btn" style="flex:1;background:var(--navy)" target="_blank" rel="noopener" href="https://www.chabadpanama.com/"><span data-es>Beit Chabad</span><span data-en>Beit Chabad</span><span data-he>בית חב״ד</span></a>
+        </div>
+      </div>
+    </div>
+    <p class="price-note" style="margin-top:24px">*<span data-es>Cuna y cama adicional disponibles en Kingston, Union, Montgomery, Albany y Crown (por espacio, no aplican en Atlantic, Troy ni Brooklyn).</span><span data-en>Crib and extra bed available in Kingston, Union, Montgomery, Albany and Crown (space permitting; not available in Atlantic, Troy or Brooklyn).</span><span data-he>עריסה ומיטה נוספת זמינות בקינגסטון, יוניון, מונטגומרי, אלבני וקראון.</span></p>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<style>
+.contact{background:var(--navy);color:var(--cream)}
+.contact .section-head h2{color:var(--cream)}.contact .eyebrow{color:var(--gold-soft)}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(30px,5vw,60px);align-items:center}
+@media(max-width:820px){.contact-grid{grid-template-columns:1fr}}
+.contact-info{display:grid;gap:22px}
+.cinfo{display:flex;gap:16px;align-items:flex-start}
+.cinfo svg{width:24px;height:24px;color:var(--gold);flex-shrink:0;margin-top:3px}
+.cinfo h4{color:var(--cream);font-size:1.15rem;margin-bottom:2px}
+.cinfo p,.cinfo a{color:rgba(251,248,241,.78);font-family:var(--sans);font-size:.92rem}
+.cinfo a:hover{color:var(--gold-soft)}
+.contact-cta{background:rgba(251,248,241,.05);border:1px solid rgba(201,162,75,.3);border-radius:12px;padding:clamp(28px,4vw,44px);text-align:center}
+.contact-cta h3{color:var(--gold-soft);font-size:1.8rem;margin-bottom:8px}
+.contact-cta p{color:rgba(251,248,241,.78);font-size:.95rem;margin-bottom:24px}
+.contact-cta .btn-gold{width:100%;justify-content:center;margin-bottom:12px}
+.policy-note{font-size:.78rem;color:rgba(251,248,241,.55);margin-top:18px;line-height:1.6}
+</style>
+<!-- FAQ -->
+<!-- RESEÑAS / TESTIMONIOS -->
+<section class="section reviews-sec" id="resenas">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow"><span data-es>Testimonios</span><span data-en>Testimonials</span><span data-he>המלצות</span></div>
+      <h2><span data-es>Lo que dicen nuestros huéspedes</span><span data-en>What our guests say</span><span data-he>מה אומרים האורחים שלנו</span></h2>
+      <div class="gold-rule"></div>
+    </div>
+    <!-- ====================================================================
+         ESPACIO RESERVADO PARA EL WIDGET DE GOOGLE REVIEWS (Elfsight)
+         CUANDO TENGAS EL CÓDIGO DE ELFSIGHT:
+         1. Borra todo el bloque <div class="reviews-placeholder">...</div>
+         2. Pega aquí el código que te da Elfsight (se ve así:
+            <div class="elfsight-app-XXXXXXXX" data-elfsight-app-lazy></div>
+            <script src="https://static.elfsight.com/platform/platform.js" async></script>)
+         ==================================================================== -->
+    <div class="reveal">
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:20px;margin-bottom:32px">
+        <div style="background:var(--bone);border:1px solid rgba(201,162,75,.2);border-radius:12px;padding:24px">
+          <div style="color:var(--gold);font-size:1.1rem;margin-bottom:10px">★★★★★</div>
+          <p style="font-family:var(--serif);font-size:1.05rem;color:var(--navy);font-style:italic;margin-bottom:14px">"Highly recommend Eshel Suites to anyone visiting Panama City and staying in Paitilla!"</p>
+          <div style="display:flex;align-items:center;gap:10px">
+            <div style="width:36px;height:36px;border-radius:50%;background:var(--navy);color:var(--gold-soft);font-family:var(--serif);font-size:.9rem;font-weight:600;display:flex;align-items:center;justify-content:center;flex-shrink:0">AB</div>
+            <div style="font-size:.8rem;color:var(--muted);font-family:var(--sans)">Alan B. · <span style="color:var(--gold-2)">Booking.com</span></div>
+          </div>
+        </div>
+        <div style="background:var(--bone);border:1px solid rgba(201,162,75,.2);border-radius:12px;padding:24px">
+          <div style="color:var(--gold);font-size:1.1rem;margin-bottom:10px">★★★★★</div>
+          <p style="font-family:var(--serif);font-size:1.05rem;color:var(--navy);font-style:italic;margin-bottom:12px">"Great new small boutique hotel near Chabad, mega kosher supermarket and restaurants. Best location!"</p>
+          <div style="display:flex;align-items:center;gap:10px"><div style="width:36px;height:36px;border-radius:50%;background:var(--navy);color:var(--gold-soft);font-family:var(--serif);font-size:.9rem;font-weight:600;display:flex;align-items:center;justify-content:center;flex-shrink:0">HV</div><div style="font-size:.8rem;color:var(--muted);font-family:var(--sans)">Huésped verificado · <span style="color:var(--gold-2)">Booking.com</span></div></div>
+        </div>
+        <div style="background:var(--bone);border:1px solid rgba(201,162,75,.2);border-radius:12px;padding:24px">
+          <div style="color:var(--gold);font-size:1.1rem;margin-bottom:10px">★★★★★</div>
+          <p style="font-family:var(--serif);font-size:1.05rem;color:var(--navy);font-style:italic;margin-bottom:12px">"Easy for Shabbat, clean, modern. Very nice host and welcoming environment."</p>
+          <div style="display:flex;align-items:center;gap:10px"><div style="width:36px;height:36px;border-radius:50%;background:var(--navy);color:var(--gold-soft);font-family:var(--serif);font-size:.9rem;font-weight:600;display:flex;align-items:center;justify-content:center;flex-shrink:0">HV</div><div style="font-size:.8rem;color:var(--muted);font-family:var(--sans)">Huésped verificado · <span style="color:var(--gold-2)">Booking.com</span></div></div>
+        </div>
+        <div style="background:var(--bone);border:1px solid rgba(201,162,75,.2);border-radius:12px;padding:24px">
+          <div style="color:var(--gold);font-size:1.1rem;margin-bottom:10px">★★★★★</div>
+          <p style="font-family:var(--serif);font-size:1.05rem;color:var(--navy);font-style:italic;margin-bottom:12px">"La calidad de muy buen gusto, tranquilidad, sector, comodidad, limpieza implacable y muy moderno. Un Hotel Boutique."</p>
+          <div style="display:flex;align-items:center;gap:10px"><div style="width:36px;height:36px;border-radius:50%;background:var(--navy);color:var(--gold-soft);font-family:var(--serif);font-size:.9rem;font-weight:600;display:flex;align-items:center;justify-content:center;flex-shrink:0">HV</div><div style="font-size:.8rem;color:var(--muted);font-family:var(--sans)">Huésped verificado · <span style="color:var(--gold-2)">Booking.com</span></div></div>
+        </div>
+        <div style="background:var(--bone);border:1px solid rgba(201,162,75,.2);border-radius:12px;padding:24px">
+          <div style="color:var(--gold);font-size:1.1rem;margin-bottom:10px">★★★★★</div>
+          <p style="font-family:var(--serif);font-size:1.05rem;color:var(--navy);font-style:italic;margin-bottom:12px">"The rooms are modern, comfy, and clean! A GREAT option for anyone visiting Panama, especially for Jewish religious travelers."</p>
+          <div style="display:flex;align-items:center;gap:10px"><div style="width:36px;height:36px;border-radius:50%;background:var(--navy);color:var(--gold-soft);font-family:var(--serif);font-size:.9rem;font-weight:600;display:flex;align-items:center;justify-content:center;flex-shrink:0">HV</div><div style="font-size:.8rem;color:var(--muted);font-family:var(--sans)">Huésped verificado · <span style="color:var(--gold-2)">Booking.com</span></div></div>
+        </div>
+        <div style="background:var(--bone);border:1px solid rgba(201,162,75,.2);border-radius:12px;padding:24px">
+          <div style="color:var(--gold);font-size:1.1rem;margin-bottom:10px">★★★★★</div>
+          <p style="font-family:var(--serif);font-size:1.05rem;color:var(--navy);font-style:italic;margin-bottom:12px">"Excellent location. Spacious room. Very responsive manager."</p>
+          <div style="display:flex;align-items:center;gap:10px"><div style="width:36px;height:36px;border-radius:50%;background:var(--navy);color:var(--gold-soft);font-family:var(--serif);font-size:.9rem;font-weight:600;display:flex;align-items:center;justify-content:center;flex-shrink:0">HV</div><div style="font-size:.8rem;color:var(--muted);font-family:var(--sans)">Huésped verificado · <span style="color:var(--gold-2)">Booking.com</span></div></div>
+        </div>
+      </div>
+      <div style="text-align:center">
+        <a class="btn btn-gold" href="https://www.google.com/maps/search/?api=1&query=Eshel+Suites+Panama" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V8h2v8zm4 0h-2V8h2v8z"/></svg>
+          <span data-es>Ver todas las reseñas en Google</span><span data-en>See all reviews on Google</span><span data-he>ראו את כל הביקורות ב-Google</span>
+        </a>
+      </div>
+    </div>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="rp-stars-icon"><path d="M12 2l2.9 6.3 6.8.8-5 4.6 1.3 6.7L12 17.8 5.7 21l1.3-6.7-5-4.6 6.8-.8z"/></svg>
+      <div class="rp-stars">★★★★★</div>
+      <p class="rp-title"><span data-es>Reseñas de Google — próximamente</span><span data-en>Google Reviews — coming soon</span><span data-he>ביקורות Google — בקרוב</span></p>
+      <p class="rp-text"><span data-es>Aquí aparecerán las reseñas de 5 estrellas de nuestros huéspedes, directamente desde Google.</span><span data-en>Our guests' 5-star reviews will appear here, directly from Google.</span><span data-he>כאן יופיעו ביקורות 5 הכוכבים של האורחים שלנו, ישירות מ-Google.</span></p>
+      
+  </div>
+</section>
+
+<section class="section faq-sec" id="faq">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow"><span data-es>Preguntas frecuentes</span><span data-en>Frequently asked questions</span><span data-he>שאלות נפוצות</span></div>
+      <h2><span data-es>Todo lo que necesitas saber</span><span data-en>Everything you need to know</span><span data-he>כל מה שצריך לדעת</span></h2>
+      <div class="gold-rule"></div>
+    </div>
+    <div class="faq-list reveal" id="faqList"></div>
+  </div>
+</section>
+
+<section class="section contact" id="contacto">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div class="eyebrow"><span data-es>Reserva &amp; contacto</span><span data-en>Booking &amp; contact</span><span data-he>הזמנה וקשר</span></div>
+      <h2><span data-es>Te esperamos en Eshel</span><span data-en>We look forward to hosting you</span><span data-he>נשמח לארח אתכם</span></h2>
+      <div class="gold-rule"></div>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-info reveal">
+        <div class="cinfo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 21s-7-4.5-7-10a7 7 0 0114 0c0 5.5-7 10-7 10z"/><circle cx="12" cy="11" r="2.5"/></svg><div><h4><span data-es>Ubicación</span><span data-en>Location</span><span data-he>מיקום</span></h4><p>Calle Tomás Gabriel Duque, Casa F9B<br>Paitilla, Ciudad de Panamá</p></div></div>
+        <div class="cinfo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M5 4h4l2 5-2 1a11 11 0 005 5l1-2 5 2v4a2 2 0 01-2 2A16 16 0 013 6a2 2 0 012-2z"/></svg><div><h4>WhatsApp</h4><a href="https://wa.me/50766730990" target="_blank" rel="noopener">+507 6673 0990</a></div></div>
+        <div class="cinfo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg><div><h4>Email</h4><a href="mailto:rentals@eshelpanama.com">rentals@eshelpanama.com</a></div></div>
+        <div class="cinfo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg><div><h4>Instagram</h4><a href="https://instagram.com/eshelsuitespanama" target="_blank" rel="noopener">@eshelsuitespanama</a></div></div>
+        <div class="cinfo"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="9"/><path d="M12 8v4l3 2"/></svg><div><h4><span data-es>Check-in / Check-out</span><span data-en>Check-in / Check-out</span><span data-he>צ׳ק-אין / צ׳ק-אאוט</span></h4><p><span data-es>Entrada 3:00 PM · Salida 11:00 AM</span><span data-en>Check-in 3:00 PM · Check-out 11:00 AM</span><span data-he>כניסה 15:00 · יציאה 11:00</span></p><p style="margin-top:7px;font-size:.82rem;color:var(--muted)"><span data-es>Late check-in y late check-out disponibles según disponibilidad, con cargo adicional. Solicitar previamente.</span><span data-en>Late check-in and late check-out available subject to availability, with an additional fee. Request in advance.</span><span data-he>צ׳ק-אין וצ׳ק-אאוט מאוחרים בכפוף לזמינות, בתשלום נוסף. יש לבקש מראש.</span></p><p style="margin-top:6px;font-size:.82rem;color:var(--gold-2);display:flex;align-items:flex-start;gap:6px"><span style="font-size:.9rem">✡︎</span><span><span data-es><b>Shabat:</b> check-out especial hasta las 8:30 PM con solicitud previa. Aplica media tarifa adicional.</span><span data-en><b>Shabbat:</b> special check-out until 8:30 PM with prior request. Half an extra night's rate applies.</span><span data-he><b>שבת:</b> צ׳ק-אאוט מיוחד עד 20:30 בבקשה מראש. חל תשלום של מחצית מחיר לילה.</span></span></p></div></div>
+      </div>
+      <div class="contact-cta reveal">
+        <h3><span data-es>Reserva en línea</span><span data-en>Book online</span><span data-he>הזמינו אונליין</span></h3>
+        <p><span data-es>Disponibilidad y tarifas en tiempo real, pago seguro con tarjeta.</span><span data-en>Real-time availability and rates, secure card payment.</span><span data-he>זמינות ומחירים בזמן אמת, תשלום מאובטח.</span></p>
+        <a class="btn btn-gold" href="https://hotels.cloudbeds.com/reservation/JNyUrT" target="_blank" rel="noopener"><span data-es>Reservar ahora</span><span data-en>Book now</span><span data-he>להזמנה</span></a>
+        <a class="btn btn-ghost" style="width:100%;justify-content:center" href="https://wa.me/50766730990" target="_blank" rel="noopener"><span data-es>Escríbenos por WhatsApp</span><span data-en>Message us on WhatsApp</span><span data-he>כתבו לנו בוואטסאפ</span></a>
+        <p class="policy-note"><span data-es>Prepago con Visa, Mastercard o Amex. Cancelación gratuita hasta 15 días antes (aplican excepciones en temporadas y fiestas). Propiedad libre de humo · no se permiten mascotas.</span><span data-en>Prepaid with Visa, Mastercard or Amex. Free cancellation up to 15 days before (exceptions apply in peak seasons and holidays). Smoke-free property · no pets.</span><span data-he>תשלום מראש. ביטול חינם עד 15 יום לפני (חריגים בעונות ובחגים). נכס ללא עישון · אסור בעלי חיים.</span></p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<style>
+footer.foot{background:#15203a;color:rgba(251,248,241,.6);padding:48px 0 30px;text-align:center}
+footer.foot .mark{font-family:var(--serif);font-size:1.8rem;color:var(--cream);font-weight:700}
+footer.foot .mark b{color:var(--gold)}
+footer.foot .sub{font-size:.6rem;letter-spacing:.34em;text-transform:uppercase;margin:4px 0 20px}
+footer.foot .flinks{display:flex;gap:22px;justify-content:center;flex-wrap:wrap;margin-bottom:22px}
+footer.foot .flinks a{font-family:var(--sans);font-size:.82rem;color:rgba(251,248,241,.7);transition:.25s}
+footer.foot .flinks a:hover{color:var(--gold-soft)}
+footer.foot .copy{font-family:var(--sans);font-size:.74rem;letter-spacing:.02em;border-top:1px solid rgba(201,162,75,.15);padding-top:20px;margin-top:8px}
+</style>
+<footer class="foot">
+  <div class="wrap">
+    <div class="footer-mark">Eshel <b>Suites</b></div>
+    <div class="footer-sub">Panamá</div>
+    <div class="flinks">
+      <a href="#suites"><span data-es>Suites</span><span data-en>Suites</span><span data-he>סוויטות</span></a>
+      <a href="#vida-judia"><span data-es>Vida Judía</span><span data-en>Jewish Life</span><span data-he>חיים יהודיים</span></a>
+      <a href="#shabat"><span data-es>Shabat</span><span data-en>Shabbat</span><span data-he>שבת</span></a>
+      <a href="#turismo"><span data-es>Turismo</span><span data-en>Tourism</span><span data-he>תיירות</span></a>
+      <a href="#kosher"><span data-es>Kosher</span><span data-en>Kosher</span><span data-he>כשר</span></a>
+      <a href="https://hotels.cloudbeds.com/reservation/JNyUrT" target="_blank" rel="noopener"><span data-es>Reservar</span><span data-en>Book</span><span data-he>הזמנה</span></a>
+    </div>
+    <div class="copy">© <span id="yr"></span> Eshel Suites Panamá · eshelpanama.com · <span data-es>Tu hogar lejos de casa</span><span data-en>Your home away from home</span><span data-he>הבית שלך הרחק מהבית</span></div>
+  </div>
+</footer>
+
+<!-- WhatsApp float -->
+<a class="wa-float" href="https://wa.me/50766730990" target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 00-8.5 15.2L2 22l4.9-1.3A10 10 0 1012 2zm0 18a8 8 0 01-4.1-1.1l-.3-.2-2.9.8.8-2.8-.2-.3A8 8 0 1112 20zm4.4-6c-.2-.1-1.4-.7-1.6-.8-.2-.1-.4-.1-.5.1l-.7.9c-.1.2-.3.2-.5.1a6.5 6.5 0 01-3.2-2.8c-.1-.2 0-.4.1-.5l.4-.5.2-.4v-.4l-.7-1.7c-.2-.5-.4-.4-.5-.4h-.5a1 1 0 00-.7.3c-.3.3-.9.9-.9 2.1s.9 2.4 1 2.6c.1.2 1.8 2.8 4.4 3.9 1.6.7 2.2.7 3 .6.5-.1 1.4-.6 1.6-1.1.2-.6.2-1 .1-1.1l-.4-.2z"/></svg>
+</a>
+
+<!-- Cloudbeds widget flotante -->
+<script src="https://hotels.cloudbeds.com/widget/load/JNyUrT/vert?newWindow=1"></script>
+
+<style>
+.wa-float{position:fixed;bottom:22px;right:22px;width:56px;height:56px;background:var(--navy);border-radius:50%;display:flex;align-items:center;justify-content:center;box-shadow:0 8px 24px rgba(28,28,28,.35);z-index:90;transition:.3s}
+.wa-float:hover{transform:scale(1.08)}
+.wa-float svg{width:30px;height:30px;color:#fff}
+body.lang-he .wa-float{right:auto;left:22px}
+/* Cloudbeds float — mover a la izquierda para no chocar con WhatsApp */
+#cb-widget-float{left:22px !important;right:auto !important}
+body.lang-he #cb-widget-float{left:auto !important;right:22px !important}
+/* Empujar barra de Cloudbeds debajo del nav */
+#cb-booking-bar,div[id*="cb-"],iframe[id*="cb-"]{margin-top:80px !important;z-index:50 !important}
+/* Hide Cloudbeds top bar */
+.cb-bar-wrapper,.cb-bar,.cb-header-bar,[class*="cb-bar"],[id*="cb-bar"]{display:none !important;height:0 !important;visibility:hidden !important}
+</style>
+
+<!-- (sections continue in next build steps) -->
+
+<script src="data.js"></script>
+<script src="kosher.js"></script>
+<script>
+// Language switcher
+const body=document.body;
+function setLang(l){
+  body.classList.remove('lang-es','lang-en','lang-he');
+  body.classList.add('lang-'+l);
+  document.documentElement.lang=l;
+  document.querySelectorAll('.lang-switch button').forEach(b=>b.classList.toggle('active',b.dataset.lang===l));
+  document.querySelectorAll('.tur-wa').forEach(function(a){var u=a.getAttribute('data-wa-'+l);if(u)a.setAttribute('href',u);});
+  try{localStorage.setItem('eshel-lang',l)}catch(e){}
+}
+document.querySelectorAll('.lang-switch button').forEach(b=>b.addEventListener('click',()=>setLang(b.dataset.lang)));
+try{const sv=localStorage.getItem('eshel-lang');if(sv)setLang(sv)}catch(e){}
+
+// ---- Render suites ----
+const grid=document.getElementById('suitesGrid');
+const L=()=>body.classList.contains('lang-en')?'en':body.classList.contains('lang-he')?'he':'es';
+const T={
+  from:{es:'desde',en:'from',he:'החל מ'},
+  night:{es:'/noche',en:'/night',he:'/לילה'},
+  tax:{es:'+ 10% imp. + $',en:'+ 10% tax + $',he:'+ 10% מס + $'},
+  clean:{es:' limpieza',en:' cleaning',he:' ניקיון'},
+  guests:{es:'huéspedes',en:'guests',he:'אורחים'},
+  upto:{es:'hasta','en':'up to',he:'עד'},
+  book:{es:'Reservar',en:'Book',he:'הזמנה'},
+  gallery:{es:'Ver galería',en:'View gallery',he:'גלריה'},
+  crib:{es:'Cuna y cama adicional sin costo (previa solicitud)',en:'Free crib & extra bed (on request)',he:'עריסה ומיטה נוספת ללא עלות (בתיאום מראש)'},
+  soon:{es:'Fotos muy pronto',en:'Photos coming soon',he:'תמונות בקרוב'}
+};
+function suiteCard(s){
+  const l=L();
+  const coverImg = s.photos>0 ? `<img class="suite-cover" src="assets/${s.id}/${s.id}-${(s.cover||'01').padStart(2,'0')}.webp" alt="Suite ${s.name}" loading="lazy">` : '';
+  const videoEl = s.video ? `<video class="suite-video" src="assets/${s.id}/${s.id}.mp4" muted loop playsinline autoplay preload="metadata" poster="assets/${s.id}/${s.id}-poster.jpg"></video>` : '';
+  const media = s.video
+    ? videoEl + coverImg
+    : (s.photos>0
+        ? coverImg
+        : `<div class="pending"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3"><path d="M3 7h4l2-2h6l2 2h4v12H3z"/><circle cx="12" cy="13" r="3.2"/></svg><span>${T.soon[l]}</span></div>`);
+  const galleryBtn = s.photos>0 ? `<button class="suite-gallery-btn" onclick="openGallery('${s.id}',${s.photos})">${T.gallery[l]} →</button>` : '';
+  const cribLine = s.crib ? `<div class="suite-extras">✦ ${T.crib[l]}</div>` : '';
+  const capTxt = `${T.upto[l]} ${s.cap} ${T.guests[l]}`;
+  return `<article class="suite-card${s.flagship?' flagship':''}" onclick="if(!event.target.closest('a,button')){window.open('${CLOUDBEDS}?rid=${s.rid}','_blank')}">
+    <div class="suite-media">
+      <span class="badge">${s.tag[l]}</span>
+      ${media}
+      ${s.photos>0||s.video?`<span class="num">${s.n}</span>`:''}
+    </div>
+    <div class="suite-body">
+      <div class="suite-name"><h3>${s.name}</h3><span class="suite-cap">${capTxt}</span></div>
+      <div class="suite-beds">${s.beds[l]}</div>
+      <div class="suite-amenities">
+        <span class="suite-amen"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/></svg>${s.cap} ${T.guests[l]}</span>
+        <span class="suite-amen"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 12h20M2 12V7a2 2 0 012-2h16a2 2 0 012 2v5M2 12v5h20v-5"/></svg>${s.beds[l]}</span>
+        <span class="suite-amen"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 12h16M4 12V8a2 2 0 012-2h12a2 2 0 012 2v4M4 12v6h16v-6"/><path d="M4 18v2M20 18v2"/></svg>WiFi · A/C · TV</span>
+      </div>
+      <p class="suite-blurb">${s.blurb[l]}</p>
+      ${galleryBtn}
+      ${cribLine}
+      <div class="suite-foot">
+        <div class="suite-price">
+          <span class="from">${T.from[l]}</span>
+          <span class="amt">$${s.price}<small>${T.night[l]}</small></span>
+          <span class="fee">${T.tax[l]}${s.clean}${T.clean[l]}</span>
+        </div>
+        <a class="suite-book" href="${CLOUDBEDS}?rid=${s.rid}" target="_blank" rel="noopener">${T.book[l]} →</a>
+      </div>
+    </div>
+  </article>`;
+}
+// order: flagship last or first? Put regular suites first, flagship as full-width feature at end
+function renderSuites(){
+  const order=[...SUITES.filter(s=>!s.flagship), ...SUITES.filter(s=>s.flagship)];
+  grid.innerHTML=order.map(suiteCard).join('');
+  // ensure videos autoplay (some browsers need a nudge)
+  grid.querySelectorAll('video').forEach(v=>{
+    v.play().catch(()=>{});
+  });
+}
+renderSuites();
+document.querySelectorAll('.lang-switch button').forEach(b=>b.addEventListener('click',renderSuites));
+
+// ---- Lightbox gallery ----
+let gState={id:null,n:0,i:0};
+function openGallery(id,n){gState={id,n,i:0};showLb()}
+function showLb(){
+  let lb=document.getElementById('lb');
+  if(!lb){lb=document.createElement('div');lb.id='lb';lb.innerHTML=
+    `<button id="lbClose">&times;</button><button id="lbPrev">‹</button><img id="lbImg"><button id="lbNext">›</button><div id="lbCount"></div>`;
+    document.body.appendChild(lb);
+    lb.addEventListener('click',e=>{if(e.target===lb)closeLb()});
+    document.getElementById('lbClose').onclick=closeLb;
+    document.getElementById('lbPrev').onclick=()=>nav(-1);
+    document.getElementById('lbNext').onclick=()=>nav(1);
+    addEventListener('keydown',e=>{if(!lb.classList.contains('open'))return;if(e.key==='Escape')closeLb();if(e.key==='ArrowLeft')nav(-1);if(e.key==='ArrowRight')nav(1)});
+  }
+  upLb();lb.classList.add('open');document.body.style.overflow='hidden';
+}
+function upLb(){
+  const idx=String(gState.i+1).padStart(2,'0');
+  document.getElementById('lbImg').src=`assets/${gState.id}/${gState.id}-${idx}.webp`;
+  document.getElementById('lbCount').textContent=`${gState.i+1} / ${gState.n}`;
+}
+function nav(d){gState.i=(gState.i+d+gState.n)%gState.n;upLb()}
+function closeLb(){document.getElementById('lb').classList.remove('open');document.body.style.overflow=''}
+
+// Nav scroll
+const nav2=document.getElementById('nav');
+addEventListener('scroll',()=>nav2.classList.toggle('scrolled',scrollY>40));
+const burger=document.getElementById('burger'),navLinks=document.getElementById('navLinks');
+burger.addEventListener('click',()=>navLinks.classList.toggle('open'));
+// cerrar el menú al tocar un enlace (móvil)
+navLinks.querySelectorAll('a').forEach(function(link){
+  link.addEventListener('click',function(){navLinks.classList.remove('open');});
+});
+navLinks.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>navLinks.classList.remove('open')));
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.08});
+function watchReveal(){document.querySelectorAll('.reveal:not(.in)').forEach(el=>io.observe(el))}
+watchReveal();
+// Safety: if anything is still hidden after load (fast scroll / no-IO), reveal it
+addEventListener('load',()=>setTimeout(()=>{
+  document.querySelectorAll('.reveal:not(.in)').forEach(el=>{
+    const r=el.getBoundingClientRect();
+    if(r.top<innerHeight*1.2)el.classList.add('in');
+  });
+},400));
+
+// ---- Kosher directory ----
+const KT={meat:{es:'Carne',en:'Meat',he:'בשרי'},dairy:{es:'Lácteo',en:'Dairy',he:'חלבי'},parve:{es:'Parve',en:'Parve',he:'פרווה'},super:{es:'Súper',en:'Super',he:'סופר'}};
+const kgrid=document.getElementById('kgrid');
+let kFilter='all';
+function renderKosher(){
+  const l=L();
+  const see={es:'Ver ficha',en:'View listing',he:'לצפייה'};
+  const list=KOSHER.filter(k=>kFilter==='all'?true:(k.z===kFilter||k.t===kFilter));
+  kgrid.innerHTML=list.map(k=>{
+    var initials=k.n.split(' ').slice(0,2).map(function(w){return w[0];}).join('');
+    var waMsg=encodeURIComponent('Hola, quisiera reservar en '+k.n);
+    return `<div class="kitem">
+      <div class="kitem-logo-placeholder">${initials}</div>
+      <div class="kitem-top"><h4>${k.n}</h4><span class="kdot ${k.t}">${KT[k.t][l]}</span></div>
+      <span class="zone"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-4.5-7-10a7 7 0 0114 0c0 5.5-7 10-7 10z"/><circle cx="12" cy="11" r="2"/></svg>${k.z}</span>
+      ${k.tag?`<span class="ktag">★ ${k.tag}</span>`:''}
+      <div style="display:flex;gap:7px;flex-wrap:wrap;margin-top:4px">
+        <a href="${KBASE}${k.u}" target="_blank" rel="noopener" style="font-family:var(--sans);font-size:.72rem;color:var(--gold-2);display:inline-flex;align-items:center;gap:4px;font-weight:500">${see[l]} →</a>
+      </div>
+    </div>`;
+  }).join('');
+}
+renderKosher();
+document.querySelectorAll('#kfilters button').forEach(b=>b.addEventListener('click',()=>{
+  document.querySelectorAll('#kfilters button').forEach(x=>x.classList.remove('active'));
+  b.classList.add('active');kFilter=b.dataset.f;renderKosher();
+}));
+document.querySelectorAll('.lang-switch button').forEach(b=>b.addEventListener('click',renderKosher));
+
+// ---- WhatsApp prefilled links ----
+function buildWa(){
+  document.querySelectorAll('[data-wa]').forEach(a=>{
+    a.href=`https://wa.me/50766730990?text=${encodeURIComponent(a.dataset.wa)}`;
+  });
+}
+buildWa();
+
+// ---- Year ----
+document.getElementById('yr').textContent=new Date().getFullYear();
+
+// ---- Shabbat times (Hebcal live) ----
+const ZONES={panama:{id:3703443,b:18},boquete:{id:3712073,b:18},bocas:{id:3714240,b:18}};
+let shabZone='panama';
+async function loadShabbat(){
+  const z=ZONES[shabZone];
+  const pEl=document.getElementById('shabParasha'),inEl=document.getElementById('shabIn'),outEl=document.getElementById('shabOut');
+  pEl.textContent='…';inEl.textContent='—';outEl.textContent='—';
+  try{
+    const r=await fetch(`https://www.hebcal.com/shabbat?cfg=json&geonameid=${z.id}&b=${z.b}&M=on`);
+    const d=await r.json();
+    let parasha='',candles='',havdalah='';
+    d.items.forEach(it=>{
+      if(it.category==='parashat')parasha=it.title;
+      if(it.category==='candles'){
+        // title like "Candle lighting: 6:47pm" or time field
+        candles=it.title.replace(/^.*?:\s*/,'');
+        if(it.date){var d=new Date(it.date);candles=d.toLocaleTimeString([],{hour:'2-digit',minute:'2-digit'});}
+      }
+      if(it.category==='havdalah'){
+        havdalah=it.title.replace(/^.*?:\s*/,'');
+        if(it.date){var d2=new Date(it.date);havdalah=d2.toLocaleTimeString([],{hour:'2-digit',minute:'2-digit'});}
+      }
+    });
+    pEl.textContent=parasha||'Shabat';
+    inEl.textContent=candles||'—';
+    outEl.textContent=havdalah||'—';
+  }catch(e){
+    const fb={es:'Consulta los horarios en Hebcal',en:'Check times on Hebcal',he:'בדקו זמנים ב-Hebcal'};
+    pEl.innerHTML=`<a href="https://www.hebcal.com/shabbat?geonameid=${z.id}" target="_blank" rel="noopener" style="color:var(--gold-soft);text-decoration:underline">${fb[L()]} →</a>`;
+    inEl.textContent='—';outEl.textContent='—';
+  }
+}
+document.querySelectorAll('#shabTabs button').forEach(b=>b.addEventListener('click',()=>{
+  document.querySelectorAll('#shabTabs button').forEach(x=>x.classList.remove('active'));
+  b.classList.add('active');shabZone=b.dataset.z;loadShabbat();
+}));
+loadShabbat();
+
+// ---- Welcome carousel ----
+(function(){
+  var track=document.getElementById('wcTrack');
+  if(!track)return;
+  var prev=document.getElementById('wcPrev'), next=document.getElementById('wcNext');
+  function step(){var s=track.querySelector('.wc-slide');return s?s.getBoundingClientRect().width+14:300;}
+  if(next)next.addEventListener('click',function(){pause();track.style.scrollBehavior='smooth';track.scrollBy({left:step()});});
+  if(prev)prev.addEventListener('click',function(){pause();track.style.scrollBehavior='smooth';track.scrollBy({left:-step()});});
+
+  // --- Auto-scroll continuo ---
+  var paused=false, resumeTimer=null;
+  var SPEED=0.5; // píxeles por frame (suave)
+  function pause(){
+    paused=true;
+    clearTimeout(resumeTimer);
+    // reanuda tras 4s de inactividad
+    resumeTimer=setTimeout(function(){paused=false;},4000);
+  }
+  // pausa al interactuar (mouse, toque, scroll manual)
+  ['mouseenter','touchstart','pointerdown','wheel'].forEach(function(ev){
+    track.addEventListener(ev,pause,{passive:true});
+  });
+  track.addEventListener('mouseleave',function(){paused=false;});
+
+  function tick(){
+    if(!paused){
+      // si llega al final, vuelve al inicio suavemente
+      if(track.scrollLeft + track.clientWidth >= track.scrollWidth - 2){
+        track.style.scrollBehavior='smooth';
+        track.scrollTo({left:0});
+        setTimeout(function(){track.style.scrollBehavior='auto';},600);
+      } else {
+        track.style.scrollBehavior='auto';
+        track.scrollLeft += SPEED;
+      }
+    }
+    requestAnimationFrame(tick);
+  }
+  // arranca solo si hay más de 1 slide y el usuario no prefiere menos movimiento
+  var reduceMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(!reduceMotion && track.querySelectorAll('.wc-slide').length>1){
+    requestAnimationFrame(tick);
+  }
+})();
+window.togglePolicy=function(btn){
+  var pol=btn.nextElementSibling;
+  if(pol){pol.classList.toggle('open');btn.classList.toggle('active');}
+  return false;
+};
+var FAQS=[
+  {q:{es:'¿Las suites son kosher y tienen cocina?',en:'Are the suites kosher and do they have a kitchen?',he:'האם הסוויטות כשרות ויש בהן מטבח?'},
+   a:{es:'El President Apartment cuenta con una cocina kosher completa y totalmente equipada, con separación de carne y leche, ideal para preparar todas tus comidas. Las demás suites incluyen microondas, hervidor, cafetera y mini nevera, pensados para calentar y conservar alimentos. Todo el ambiente del aparthotel está diseñado para una estadía cómoda dentro del estilo de vida judío.',en:'The President Apartment has a complete, fully equipped kosher kitchen with meat and dairy separation, ideal for preparing all your meals. The other suites include a microwave, kettle, coffee maker and mini fridge, designed for warming and storing food. The whole aparthotel is designed for a comfortable stay within the Jewish lifestyle.',he:'באפרטמנט הנשיאותי מטבח כשר מלא ומאובזר עם הפרדת בשר וחלב, אידיאלי להכנת כל הארוחות. שאר הסוויטות כוללות מיקרוגל, קומקום, מכונת קפה ומקרר קטן לחימום ושמירת מזון.'}},
+  {q:{es:'¿Las cerraduras y la suite son aptas para Shabat?',en:'Are the locks and suite Shabbat-friendly?',he:'האם המנעולים והסוויטה מתאימים לשבת?'},
+   a:{es:'Sí. Cuidamos cada detalle para que tu Shabat sea tranquilo. Varias suites cuentan con cerraduras manuales aptas para Shabat y el aparthotel ofrece la infraestructura necesaria para observar Shabat con comodidad. Si tienes requerimientos específicos, escríbenos antes de tu llegada y los coordinamos.',en:'Yes. We take care of every detail so your Shabbat is peaceful. Several suites have manual, Shabbat-friendly locks and the aparthotel offers the infrastructure needed to observe Shabbat comfortably. If you have specific requirements, message us before arrival and we will arrange them.',he:'כן. אנו דואגים לכל פרט כדי שהשבת שלך תהיה רגועה. מספר סוויטות כוללות מנעולים ידניים המתאימים לשבת, והאפארטהוטל מציע את התשתית הדרושה לשמירת שבת בנוחות. לדרישות מיוחדות, כתבו לנו לפני ההגעה.'}},
+  {q:{es:'¿Cuál es la política de cancelación?',en:'What is the cancellation policy?',he:'מהי מדיניות הביטול?'},
+   a:{es:'Cancelación gratuita hasta 15 días antes del inicio de la reserva. Entre 14 y 7 días antes, se cobra el valor de una noche por suite (o crédito por un año según disponibilidad). Con menos de 7 días no hay reembolso, pero queda un crédito para usar durante el año en curso.<br><button class="faq-more" type="button" onclick="togglePolicy(this)"><span class="inline" data-es>Ver política completa</span><span class="inline" data-en>View full policy</span><span class="inline" data-he>צפה במדיניות המלאה</span></button><div class="faq-policy"><p><b>Excepciones</b> (reservas de grupo de 3+ suites; los meses de enero, febrero, julio y diciembre; y las fiestas judías —Rosh Hashaná, Yom Kipur, Sucot, Pésaj):</p><p>• La cancelación gratuita aplica solo si se realiza 30 días antes (aplican gastos bancarios al reembolso).</p><p>• Entre 29 y 15 días antes: no hay reembolso, pero se puede reprogramar la estadía por un año desde la fecha reservada.</p><p>• Con menos de 15 días: no hay reembolso, pero la reserva es transferible a otros clientes (Eshel Suites se reserva el derecho de admisión).</p><p>No se aplica reembolso si el huésped decide finalizar su estadía antes de tiempo.</p></div>',en:'Free cancellation up to 15 days before the start of the reservation. Between 14 and 7 days before, the value of one night per suite is charged (or a one-year credit subject to availability). With less than 7 days there is no refund, but a credit remains to use within the current year.<br><button class="faq-more" type="button" onclick="togglePolicy(this)"><span class="inline" data-es>Ver política completa</span><span class="inline" data-en>View full policy</span><span class="inline" data-he>צפה במדיניות המלאה</span></button><div class="faq-policy"><p><b>Exceptions</b> (group reservations of 3+ suites; the months of January, February, July and December; and Jewish holidays —Rosh Hashanah, Yom Kippur, Sukkot, Pesach):</p><p>• Free cancellation only applies if made 30 days before (bank charges apply to refunds).</p><p>• Between 29 and 15 days before: no refund, but the stay can be rescheduled for one year from the booked date.</p><p>• With less than 15 days: no refund, but the reservation is transferable to other clients (Eshel Suites reserves the right of admission).</p><p>No refund applies if the guest decides to end their stay early.</p></div>',he:'ביטול חינם עד 15 יום לפני תחילת ההזמנה. בין 14 ל-7 ימים לפני, נגבה תשלום של לילה אחד לכל סוויטה (או זיכוי לשנה בכפוף לזמינות). בפחות מ-7 ימים אין החזר, אך נשאר זיכוי לשימוש במהלך השנה.<br><button class="faq-more" type="button" onclick="togglePolicy(this)"><span class="inline" data-es>Ver política completa</span><span class="inline" data-en>View full policy</span><span class="inline" data-he>צפה במדיניות המלאה</span></button><div class="faq-policy"><p><b>חריגים</b> (הזמנות קבוצתיות של 3+ סוויטות; החודשים ינואר, פברואר, יולי ודצמבר; וחגי ישראל —ראש השנה, יום כיפור, סוכות, פסח):</p><p>• ביטול חינם חל רק אם נעשה 30 יום מראש (חיובי בנק חלים על החזר).</p><p>• בין 29 ל-15 ימים לפני: אין החזר, אך ניתן לתזמן מחדש את השהות לשנה.</p><p>• בפחות מ-15 יום: אין החזר, אך ההזמנה ניתנת להעברה ללקוחות אחרים.</p><p>אין החזר אם האורח מחליט לסיים את שהותו מוקדם.</p></div>'}},
+  {q:{es:'¿Cuántas personas caben en cada suite?',en:'How many people fit in each suite?',he:'כמה אנשים נכנסים בכל סוויטה?'},
+   a:{es:'Tenemos opciones para todos: desde suites para 2 personas (Troy, Brooklyn, Atlantic) hasta el espacioso President Apartment para 8 huéspedes, con 2 recámaras, sala, comedor, balcón, jardín y sukkah privada. Montgomery es ideal para familias (hasta 6). Cada suite indica su capacidad en la sección de suites.',en:'We have options for everyone: from suites for 2 (Troy, Brooklyn, Atlantic) to the spacious President Apartment for 8 guests, with 2 bedrooms, living and dining areas, balcony, garden and a private sukkah. Montgomery is ideal for families (up to 6). Each suite shows its capacity in the suites section.',he:'יש לנו אפשרויות לכולם: מסוויטות ל-2 (טרוי, ברוקלין, אטלנטיק) ועד האפרטמנט הנשיאותי המרווח ל-8 אורחים, עם 2 חדרי שינה, סלון, פינת אוכל, מרפסת, גינה וסוכה פרטית. מונטגומרי אידיאלי למשפחות (עד 6).'}},
+  {q:{es:'¿Cómo reservo y cómo puedo contactarlos?',en:'How do I book and how can I contact you?',he:'איך מזמינים ואיך יוצרים קשר?'},
+   a:{es:'Puedes escribirnos directamente por WhatsApp al +507 6673-0990 o por correo a rentals@eshelpanama.com. Con gusto te ayudamos a elegir la suite ideal, coordinar tu llegada y organizar tours o servicios durante tu estadía.',en:'You can message us directly on WhatsApp at +507 6673-0990 or email rentals@eshelpanama.com. We are happy to help you choose the ideal suite, coordinate your arrival and arrange tours or services during your stay.',he:'ניתן לכתוב לנו ישירות בוואטסאפ +507 6673-0990 או במייל rentals@eshelpanama.com. נשמח לעזור לבחור את הסוויטה האידיאלית, לתאם את ההגעה ולארגן סיורים ושירותים.'}},
+  {q:{es:'¿Pueden ayudarme a organizar tours y experiencias?',en:'Can you help me arrange tours and experiences?',he:'האם תוכלו לעזור לארגן סיורים וחוויות?'},
+   a:{es:'¡Por supuesto! Coordinamos tours por la ciudad, playas e islas, y experiencias como ATV, rafting, cabalgatas, paseos en bote, chef privado y servicio de mashguíaj. Mira la sección de Turismo y escríbenos por WhatsApp con la fecha deseada para reservar.',en:'Of course! We arrange city tours, beaches and islands, and experiences such as ATV, rafting, horseback riding, boat tours, private chef and mashgiach service. Check the Tourism section and message us on WhatsApp with your preferred date to book.',he:'בהחלט! אנו מארגנים סיורים בעיר, חופים ואיים, וחוויות כמו ATV, רפטינג, רכיבה על סוסים, שייט, שף פרטי ושירות משגיח. עיינו בחלק התיירות וכתבו לנו בוואטסאפ עם התאריך הרצוי.'}}
+];
+(function(){
+  var L=function(){var m=document.body.className.match(/lang-(\w\w)/);return m?m[1]:'es';};
+  var sp=function(o){return '<span class="inline" data-es>'+o.es+'</span><span class="inline" data-en>'+o.en+'</span><span class="inline" data-he>'+o.he+'</span>';};
+  var list=document.getElementById('faqList');
+  if(list){
+    list.innerHTML=FAQS.map(function(f){
+      return '<div class="faq-item"><button class="faq-q" type="button">'+sp(f.q)+'<span class="faq-ico"></span></button><div class="faq-a"><div class="faq-a-body">'+sp(f.a)+'</div></div></div>';
+    }).join('');
+    list.querySelectorAll('.faq-q').forEach(function(btn){
+      btn.addEventListener('click',function(){
+        var item=btn.closest('.faq-item');
+        item.classList.toggle('open');
+      });
+    });
+    if(window.applyLang){window.applyLang();}
+  }
+})();
+</script>
+<style>
+#lb{position:fixed;inset:0;z-index:1000;background:rgba(20,28,48,.95);display:none;align-items:center;justify-content:center}
+#lb.open{display:flex}
+#lbImg{width:88vw;max-width:1000px;height:80vh;object-fit:cover;border-radius:6px;box-shadow:0 30px 80px rgba(0,0,0,.6)}
+#lb button{position:absolute;background:rgba(201,162,75,.15);border:1px solid rgba(201,162,75,.5);color:var(--gold-soft);cursor:pointer;border-radius:999px;transition:.25s}
+#lb button:hover{background:var(--gold);color:var(--navy)}
+#lbClose{top:24px;right:28px;width:46px;height:46px;font-size:1.6rem}
+#lbPrev,#lbNext{top:50%;transform:translateY(-50%);width:54px;height:54px;font-size:2rem;display:flex;align-items:center;justify-content:center}
+#lbPrev{left:24px}#lbNext{right:24px}
+#lbCount{position:absolute;bottom:26px;left:50%;transform:translateX(-50%);color:var(--gold-soft);font-family:var(--sans);font-size:.82rem;letter-spacing:.14em}
+</style>
+</body>
+</html>
